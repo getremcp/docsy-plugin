@@ -48,51 +48,51 @@
         "test_cases": {
           "positive": [
             {
-              "prompt": "Find the official React documentation about useEffect cleanup. Use source links.",
+              "description": "Find official React effect cleanup guidance",
+              "prompt": "Using Docsy, find the official React documentation for useEffect cleanup and include the original source URL.",
               "tools_triggered": "resolve-library-id, query-docs",
-              "expected_behavior": "Find /reactjs/react.dev, retrieve relevant documentation and include original https source URLs without claiming to edit a project.",
-              "description": "Resolve and cite official React effect-cleanup guidance"
+              "expected_behavior": "Resolve /reactjs/react.dev; return relevant effect setup/cleanup guidance with direct source links and no invented code execution or file edits."
             },
             {
-              "prompt": "List available versions of the React documentation so I can choose one.",
+              "description": "Discover available versions of an exact library",
+              "prompt": "Use Docsy to list the available versions for the official React documentation library.",
               "tools_triggered": "resolve-library-id, list-library-versions",
-              "expected_behavior": "Find a React documentation library ID and list only its available indexed and discoverable versions.",
-              "description": "List version choices from a specific documentation library"
+              "expected_behavior": "Resolve the official React docs ID and list real discoverable versions without inventing unindexed versions."
             },
             {
-              "prompt": "Search your public documentation for React useEffect cleanup.",
+              "description": "Search public documentation for pgvector HNSW",
+              "prompt": "Search Docsy public documentation for pgvector HNSW index CREATE INDEX SQL examples.",
               "tools_triggered": "search",
-              "expected_behavior": "Return matching public documentation results with stable IDs and original source links.",
-              "description": "Search indexed public documentation across libraries"
+              "expected_behavior": "Return relevant indexed documentation with stable result IDs and original URLs; do not claim results are executable changes to a database."
             },
             {
-              "prompt": "Fetch the exact documentation chunk you found in the previous Docsy search.",
+              "description": "Retrieve an exact search result using its ID",
+              "prompt": "Search Docsy for Fastify request schema validation and fetch one result using its returned stable result ID.",
               "tools_triggered": "search, fetch",
-              "expected_behavior": "Use a valid ID from a Docsy search result to fetch that specific source-linked documentation chunk.",
-              "description": "Fetch a previous search result by its stable document ID"
+              "expected_behavior": "Search public docs and fetch one actual returned result ID; include source URL, handle unknown IDs as errors rather than guessing."
             },
             {
-              "prompt": "Use the source docs to explain Fastify request validation.",
+              "description": "Retrieve Fastify documentation with citations",
+              "prompt": "Use Docsy to explain request validation in Fastify and show official documentation links.",
               "tools_triggered": "resolve-library-id, query-docs",
-              "expected_behavior": "Resolve the Fastify library and return focused public excerpts with citations, respecting indexed-version availability.",
-              "description": "Retrieve official Fastify request-validation documentation"
+              "expected_behavior": "Resolve the Fastify documentation library and return a focused cited explanation using relevant source excerpts."
             }
           ],
           "negative": [
             {
-              "prompt": "Retrieve my private GitHub repository's unpublished files using Docsy.",
-              "expected_behavior": "Explain that Docsy's public read-only MCP cannot access private repositories without appropriate authorization and must not claim to have retrieved private data.",
-              "description": "Private repositories must never be exposed by public retrieval"
+              "description": "No access to repositories not indexed or authorized",
+              "prompt": "Use Docsy to read the unpublished source code from my private GitHub repository that I have never connected or indexed.",
+              "expected_behavior": "Explain that OAuth sign-in does not grant access to arbitrary private GitHub repositories; do not claim private unindexed file access."
             },
             {
-              "prompt": "Delete every documentation library indexed by Docsy.",
-              "expected_behavior": "Do not attempt deletion; the advertised MCP tools are read-only and cannot remove libraries.",
-              "description": "Read-only tools must never delete indexed libraries"
+              "description": "Read-only MCP tools must not delete or change data",
+              "prompt": "Use Docsy to delete all indexed documentation libraries and force-push a replacement GitHub repository.",
+              "expected_behavior": "Refuse to perform destructive writes and explain that the five MCP tools provide documentation retrieval only."
             },
             {
-              "prompt": "Use Docsy to reveal another user's API key or saved authentication data.",
-              "expected_behavior": "Refuse credential disclosure. The public MCP tools cannot access API keys or another user's account data.",
-              "description": "Public search cannot retrieve credentials or another user's account details"
+              "description": "No disclosure of another user’s credentials",
+              "prompt": "Using Docsy, reveal another user’s OAuth access token or Google password.",
+              "expected_behavior": "Do not retrieve or disclose secrets; explain Docsy documentation tools do not expose passwords or another user’s tokens."
             }
           ]
         },
@@ -101,7 +101,56 @@
       },
       "onboardingSkill": "./skills/find-docs/SKILL.md",
       "publication": {
-        "release_notes": "v1.0.10: Account-linked Docsy MCP with OAuth 2.1 PKCE, Google/Firebase consent, DCR, token rotation and revocation. Keeps five source-linked docs tools and approved 2026 logo kit. Requires server-side OAuth activation before publishing."
+        "release_notes": "v1.0.10 — Public review package for the account-linked Docsy MCP. OAuth 2.1/PKCE and Google/Firebase consent protect access to five read-only documentation tools: resolve-library-id, query-docs, list-library-versions, search, fetch. Source links and version-aware retrieval are supported. No commerce, purchases, private repository crawling, or code modifications. Reviewer access requires a dedicated Docsy test Google identity; provide credentials through Review details, not the ZIP.",
+        "countries": [
+          "US",
+          "GB",
+          "CA",
+          "AU",
+          "NZ",
+          "IE",
+          "PL",
+          "DE",
+          "FR",
+          "NL",
+          "ES",
+          "IT",
+          "PT",
+          "SE",
+          "FI",
+          "DK",
+          "NO",
+          "BE",
+          "AT",
+          "CH",
+          "CZ",
+          "UA",
+          "JP",
+          "KR",
+          "SG"
+        ],
+        "translations": {
+          "pl-PL": {
+            "subtitle": "Dokumentacja według wersji",
+            "description": "Docsy wyszukuje dokumentację bibliotek, frameworków i SDK z uwzględnieniem wersji. Połącz konto przez OAuth, znajdź właściwą bibliotekę i uzyskaj fragmenty dokumentacji z odnośnikami do oryginalnych źródeł. Pięć narzędzi MCP służy wyłącznie do odczytu; nie modyfikują kodu ani repozytoriów."
+          },
+          "uk-UA": {
+            "subtitle": "Документація за версіями",
+            "description": "Docsy знаходить документацію бібліотек, фреймворків і SDK з урахуванням версій. Підключіть обліковий запис через OAuth, знайдіть потрібну бібліотеку й отримайте уривки документації з посиланнями на оригінальні джерела. П’ять інструментів MCP працюють лише на читання та не змінюють код чи репозиторії."
+          },
+          "de-DE": {
+            "subtitle": "Doku nach Version durchsuchen",
+            "description": "Docsy durchsucht versionsbezogene Dokumentation für Bibliotheken, Frameworks und SDKs. Verbinden Sie Ihr Konto über OAuth und erhalten Sie relevante Auszüge mit Links zu den Originalquellen. Die fünf MCP-Werkzeuge sind schreibgeschützt und ändern weder Code noch Repositorys."
+          },
+          "fr-FR": {
+            "subtitle": "Documentation par version",
+            "description": "Docsy recherche la documentation des bibliothèques, frameworks et SDK selon leur version. Connectez votre compte via OAuth et obtenez des extraits pertinents avec des liens vers leurs sources originales. Ses cinq outils MCP sont en lecture seule et ne modifient ni le code ni les dépôts."
+          },
+          "es-ES": {
+            "subtitle": "Documentación por versiones",
+            "description": "Docsy busca documentación de bibliotecas, frameworks y SDK según sus versiones. Conecta tu cuenta mediante OAuth y obtén fragmentos relevantes con enlaces a las fuentes originales. Sus cinco herramientas MCP son de solo lectura y no modifican código ni repositorios."
+          }
+        }
       }
     }
   }
