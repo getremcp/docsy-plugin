@@ -34,3 +34,12 @@ or prerelease. This check executes **before** GitHub OIDC authentication.
 Plugin `1.0.10` is still an OAuth review candidate; `server.json` remains
 on the stable `1.0.9` manifest until the new version passes its full release
 gates. Do not promote a candidate by triggering the Registry workflow.
+
+## Protected release synchronization
+
+All public file updates are exported from a clean, tested private source commit
+through a temporary `release-sync/*` pull request. The public default
+branch requires GitHub Actions checks and pull requests, including for admins.
+The release staging branch is deleted after merging; ordinary development
+branches cannot be created in this public repository. Public tags and ZIP
+assets remain separately versioned and protected.
