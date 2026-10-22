@@ -43,3 +43,9 @@ branch requires GitHub Actions checks and pull requests, including for admins.
 The release staging branch is deleted after merging; ordinary development
 branches cannot be created in this public repository. Public tags and ZIP
 assets remain separately versioned and protected.
+
+The release operator can also invoke the one-command protected promotion
+workflow after the private source is merged: it stages approved files,
+waits for required GitHub Actions checks, revalidates their contents and SHA,
+and merges using the GitHub branch rules. Failed CI leaves the public PR open
+for inspection and does not modify `main`.
