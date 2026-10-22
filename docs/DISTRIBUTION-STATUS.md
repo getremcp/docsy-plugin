@@ -1,10 +1,10 @@
 # Docsy distribution status
 
-Last technical verification: 17 October 2026. **Listings, submissions, private installations, and official approvals are different states.** See the linked primary evidence; catalogue operators control review timing.
+Last technical verification: 22 October 2026 (GitHub/npm repository split); platform directory claims last individually verified on 17 October 2026. **Listings, submissions, private installations, and official approvals are different states.** See the linked primary evidence; catalogue operators control review timing.
 
 | Channel | Status | Evidence |
 | --- | --- | --- |
-| GitHub organization | **Published** | [getremcp/docsy-plugin](https://github.com/getremcp/docsy-plugin) |
+| GitHub organization | **Published** | [Plugin releases](https://github.com/getremcp/docsy-plugin) · [SDK/CLI releases](https://github.com/getremcp/docsy) |
 | GitHub Plugin v1.0.10 | **Candidate, not released** | OAuth 2.1 app update; depends on backend OAuth cutover, new login-demo recording and OpenAI review. |
 | GitHub Plugin v1.0.9 | **Published** | [Release ZIP and real-response demonstration](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9); release integrity CI passed. |
 | GitHub Plugin v1.0.8 | **Published** | [Release ZIP and demonstration](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.8) |
@@ -23,7 +23,8 @@ Last technical verification: 17 October 2026. **Listings, submissions, private i
 | ChatGPT personal Docsy plugin | **Updated v1.0.14** | Personal app-backed configuration uploaded and verified through Plugin Creator on 2026-10-17; retains five skills and artwork. This is private and does **not** confer mobile availability or public directory approval. |
 | Official Claude Directory | **Not confirmed submitted** | Separate authenticated publisher review required |
 | Cursor Marketplace | **Submitted; awaiting Cursor review** | Publisher application accepted by [Cursor's official submission form](https://cursor.com/marketplace/publish) on 2026-10-16; the authenticated UI displayed “Thanks for applying”. **Not approved or publicly listed**. |
-| npm `@docsy/sdk` and `@docsy/cli` | **Not published** | npm scope-owner login / Trusted Publisher must be configured; do not claim npm distribution |
+| npm `@remcp/docsy-sdk` | **Published v0.1.0** | [npm package](https://www.npmjs.com/package/@remcp/docsy-sdk) · [public release source](https://github.com/getremcp/docsy) |
+| npm `@remcp/docsy-cli` | **Published v0.1.1** | [npm package](https://www.npmjs.com/package/@remcp/docsy-cli) · [public release source](https://github.com/getremcp/docsy) |
 
 ## Stable public MCP endpoint
 
@@ -66,3 +67,11 @@ For personal ChatGPT use, creating and approving a custom MCP connection is an a
 ## Discovery metadata
 
 The public plugin repository is tagged with MCP, remote MCP, developer documentation, Claude Code and Cursor topics and points to the live service homepage. A domain-level discovery manifest has been merged in [core PR #158](https://github.com/antonbaider/docsy/pull/158), live and verified via HTTPS on 2026-10-16.
+
+
+## Repository governance (22 October 2026)
+
+- **Private full development:** `antonbaider/docsy-full` (renamed from `antonbaider/docsy`), including hosted backend, frontend, crawler, internal deployment and development branches.
+- **Public plugin:** `getremcp/docsy-plugin` — release-only `main`, tagged ZIPs, manifest, skills, installation docs and review evidence; all former feature/fix/docs branches were archived privately before removal.
+- **Public npm source:** `getremcp/docsy` — release-only SDK and CLI source trees, package-specific tags and CI. These are the already-published npm packages `@remcp/docsy-sdk` and `@remcp/docsy-cli`.
+- The last stable plugin release is `plugin-v1.0.9`. The `plugin-v1.0.10` prerelease is still an OAuth review **candidate**, not the stable release or marketplace approval.

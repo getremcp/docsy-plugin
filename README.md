@@ -6,6 +6,39 @@
 </picture>
 
 
+<p align="center"><strong>Version-aware developer documentation with verifiable source links — free MCP access.</strong></p>
+
+<p align="center">
+  <a href="https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9"><img alt="Stable plugin" src="https://img.shields.io/badge/plugin-v1.0.9-1f2328?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/@remcp/docsy-sdk"><img alt="Docsy SDK on npm" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-sdk?style=flat-square&label=SDK"></a>
+  <a href="https://www.npmjs.com/package/@remcp/docsy-cli"><img alt="Docsy CLI on npm" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-cli?style=flat-square&label=CLI"></a>
+  <a href="https://github.com/getremcp/docsy"><img alt="Public SDK and CLI" src="https://img.shields.io/badge/SDK%20%2B%20CLI-public-1f2328?style=flat-square"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-1f2328?style=flat-square"></a>
+  <a href="https://github.com/getremcp/docsy-plugin/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/getremcp/docsy-plugin?style=flat-square"></a>
+</p>
+
+<p align="center">
+  <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=getremcp"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-published-1f2328?style=flat-square"></a>
+  <a href="https://smithery.ai/servers/getremcp/docsy"><img alt="Smithery" src="https://img.shields.io/badge/Smithery-listed-1f2328?style=flat-square"></a>
+  <a href="https://glama.ai/mcp/connectors/io.github.getremcp/docsy"><img alt="Glama" src="https://img.shields.io/badge/Glama-connector-1f2328?style=flat-square"></a>
+  <a href="https://github.com/punkpeye/awesome-remote-mcp-servers#developer-tools"><img alt="Awesome Remote MCP" src="https://img.shields.io/badge/Awesome%20MCP-listed-1f2328?style=flat-square"></a>
+  <a href="#install"><img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-community%20plugin-1f2328?style=flat-square"></a>
+  <a href="#install"><img alt="Codex" src="https://img.shields.io/badge/Codex-Git%20plugin-1f2328?style=flat-square"></a>
+  <a href="#install"><img alt="Cursor" src="https://img.shields.io/badge/Cursor-MCP%20install-1f2328?style=flat-square"></a>
+  <a href="docs/DISTRIBUTION-STATUS.md"><img alt="OpenAI status" src="https://img.shields.io/badge/OpenAI%20Directory-in%20review-1f2328?style=flat-square"></a>
+</p>
+
+<p align="center">
+  <a href="https://docsy.remcp.site">Website</a> ·
+  <a href="https://docsy.remcp.site/docs">Docs</a> ·
+  <a href="https://github.com/getremcp/docsy">SDK / CLI</a> ·
+  <a href="https://github.com/getremcp/docsy-plugin/releases">Plugin Releases</a> ·
+  <a href="https://docsy.remcp.site/privacy">Privacy</a> ·
+  <a href="https://docsy.remcp.site/terms">Terms</a> ·
+  <a href="https://docsy.remcp.site/support">Support</a>
+</p>
+
+
 Open-source plugin for current, source-linked developer documentation in
 **Claude, OpenAI/ChatGPT/Codex and Cursor**. It connects to the hosted
 read-only Streamable HTTP MCP endpoint:
@@ -43,6 +76,24 @@ python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.10.zip
 ```
 
 See [OAuth release checklist](docs/OAUTH-RELEASE-CHECKLIST.md).
+
+## Public packages and release policy
+
+Docsy's **TypeScript SDK and CLI are already published on npm**, under the
+`@remcp` scope (not `@docsy`). The source, npm build instructions, and
+package-specific release tags live in the separate, [public SDK/CLI repository](https://github.com/getremcp/docsy).
+
+```sh
+npm install @remcp/docsy-sdk
+npm install --global @remcp/docsy-cli
+docsy --help
+```
+
+This repository contains only published/plugin-release distribution files.
+**All feature development, backend, crawlers, deployment, experiments and draft
+branches belong in the private `docsy-full` repository.** Public releases
+are versioned and validated, with release ZIP integrity checks. See the
+[release governance policy](docs/RELEASE-POLICY.md).
 
 ## Install
 
