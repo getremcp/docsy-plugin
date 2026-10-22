@@ -81,6 +81,10 @@ python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.10.zip
 
 See [OAuth release checklist](docs/OAUTH-RELEASE-CHECKLIST.md).
 
+## Installation guide
+
+**[Full setup guide: Codex, Claude Code, Cursor, VS Code, ChatGPT, Gemini, SDK and CLI](docs/GETTING-STARTED.md)** — installation, OAuth sign-in and troubleshooting.
+
 ## Quick start: Docsy MCP and npm clients
 
 **Website:** https://docsy.remcp.site · **Documentation:** https://docsy.remcp.site/docs · **Support:** https://docsy.remcp.site/support
