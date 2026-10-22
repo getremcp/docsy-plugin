@@ -25,6 +25,8 @@
   <a href="#install"><img alt="Claude Code" src="https://img.shields.io/badge/Claude%20Code-community%20plugin-1f2328?style=flat-square"></a>
   <a href="#install"><img alt="Codex" src="https://img.shields.io/badge/Codex-Git%20plugin-1f2328?style=flat-square"></a>
   <a href="#install"><img alt="Cursor" src="https://img.shields.io/badge/Cursor-MCP%20install-1f2328?style=flat-square"></a>
+  <a href="https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0"><img alt="Gemini CLI" src="https://img.shields.io/badge/Gemini%20CLI-extension-1f2328?style=flat-square"></a>
+  <a href="https://kiro.dev/docs/powers/installation/"><img alt="Kiro Powers" src="https://img.shields.io/badge/Kiro-custom%20power-1f2328?style=flat-square"></a>
   <a href="docs/DISTRIBUTION-STATUS.md"><img alt="OpenAI status" src="https://img.shields.io/badge/OpenAI%20Directory-in%20review-1f2328?style=flat-square"></a>
 </p>
 

@@ -5,6 +5,8 @@ Last technical verification: 22 October 2026 (GitHub/npm repository split); plat
 | Channel | Status | Evidence |
 | --- | --- | --- |
 | GitHub organization | **Published** | [Plugin releases](https://github.com/getremcp/docsy-plugin) · [SDK/CLI releases](https://github.com/getremcp/docsy) |
+| Gemini CLI Extension | **GitHub release available; gallery indexing not confirmed** | [v1.0.0 release](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) · [installation](https://github.com/getremcp/docsy#gemini-cli-and-kiro) |
+| Kiro Power | **Custom GitHub import available; curated listing not confirmed** | [Agent Plugin](https://github.com/getremcp/docsy-plugin) · [Kiro installation documentation](https://kiro.dev/docs/powers/installation/) |
 | GitHub Plugin v1.0.10 | **Candidate, not released** | OAuth 2.1 app update; depends on backend OAuth cutover, new login-demo recording and OpenAI review. |
 | GitHub Plugin v1.0.9 | **Published** | [Release ZIP and real-response demonstration](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9); release integrity CI passed. |
 | GitHub Plugin v1.0.8 | **Published** | [Release ZIP and demonstration](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.8) |
@@ -23,8 +25,8 @@ Last technical verification: 22 October 2026 (GitHub/npm repository split); plat
 | ChatGPT personal Docsy plugin | **Updated v1.0.14** | Personal app-backed configuration uploaded and verified through Plugin Creator on 2026-10-17; retains five skills and artwork. This is private and does **not** confer mobile availability or public directory approval. |
 | Official Claude Directory | **Not confirmed submitted** | Separate authenticated publisher review required |
 | Cursor Marketplace | **Submitted; awaiting Cursor review** | Publisher application accepted by [Cursor's official submission form](https://cursor.com/marketplace/publish) on 2026-10-16; the authenticated UI displayed “Thanks for applying”. **Not approved or publicly listed**. |
-| npm `@remcp/docsy-sdk` | **Published v0.1.0** | [npm package](https://www.npmjs.com/package/@remcp/docsy-sdk) · [public release source](https://github.com/getremcp/docsy) |
-| npm `@remcp/docsy-cli` | **Published v0.1.1** | [npm package](https://www.npmjs.com/package/@remcp/docsy-cli) · [public release source](https://github.com/getremcp/docsy) |
+| npm `@remcp/docsy-sdk` | **Published (current version on npm)** | [npm package](https://www.npmjs.com/package/@remcp/docsy-sdk) · [public release source](https://github.com/getremcp/docsy) |
+| npm `@remcp/docsy-cli` | **Published (current version on npm)** | [npm package](https://www.npmjs.com/package/@remcp/docsy-cli) · [public release source](https://github.com/getremcp/docsy) |
 
 ## Stable public MCP endpoint
 

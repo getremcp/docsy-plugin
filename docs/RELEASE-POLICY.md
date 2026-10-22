@@ -15,3 +15,9 @@ Plugin tags use `plugin-vMAJOR.MINOR.PATCH`; SDK and CLI tags use `sdk-vMAJOR.MI
 The GitHub Release page is the canonical location for verified ZIPs. Each release must be built from its exact tag and compared against its assets. Mark OAuth review candidates as prerelease until account linking, protocol smoke tests and review evidence pass.
 
 Marketplace states **published**, **listed**, **submitted**, **pending review** and **private installation** are not interchangeable. See [distribution status](DISTRIBUTION-STATUS.md) before creating any badge claiming approval. The GitHub plugin catalog, npm publication, MCP Registry, Smithery, Cline, Cursor and official OpenAI/Anthropic listing are distinct distribution channels.
+
+The independent Gemini CLI extension is released from the private
+`distribution/gemini` source into `getremcp/docsy` and tagged
+`gemini-vX.Y.Z`. The official Gemini CLI Gallery discovers tagged,
+public GitHub repositories with the `gemini-cli-extension` topic;
+gallery indexing is not the same as a confirmed listing.
