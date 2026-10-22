@@ -1,5 +1,14 @@
 # Docsy Directory Review Evidence (October 16, 2026)
 
+> Historical recording. The anonymous live MCP results described below were
+> captured on October 16, 2026. As of October 22 the production MCP uses
+> OAuth, so anonymous `initialize` now returns a 401 Bearer challenge. This
+> earlier video does not establish a working authenticated OAuth consent flow
+> or a current five-tool MCP scan. The anonymous REST docs remain usable.
+> The current smoke script checks OAuth discovery and REST when no token is
+> provided; pass `DOCSY_MCP_ACCESS_TOKEN` for full MCP tests.
+
+
 This v1.0.8 public review candidate includes a new capture of actual public MCP responses through the organization-owned /mcp/registry endpoint. No native client demonstration is implied.
 
 This document explains what is actually available, what each tool does, and

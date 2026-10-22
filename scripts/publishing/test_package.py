@@ -108,7 +108,9 @@ class PluginPackageTests(unittest.TestCase):
         source=(ROOT/"scripts/publishing/mcp-review-smoke.mjs").read_text()
         self.assertIn('new URL("../../mcp.json",import.meta.url)',source)
         self.assertIn('process.env.DOCSY_MCP_URL',source)
-        self.assertEqual(source.count('fetch(mcpUrl,{'),3)
+        self.assertEqual(source.count('fetch(mcpUrl,{'),4)
+        self.assertIn('verifyOauthDiscovery(base)',source)
+        self.assertIn('verifyAnonymousDocumentation(base)',source)
         self.assertNotIn('fetch(base+"/mcp",',source)
         self.assertEqual(json.loads((ROOT/"mcp.json").read_text())["mcpServers"]["docsy"]["url"],SERVER)
 

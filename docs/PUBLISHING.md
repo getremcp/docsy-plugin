@@ -4,7 +4,12 @@ Docsy exposes one **public, read-only remote MCP** endpoint:
 
     https://docsy.remcp.site/mcp/registry
 
-Tools: `resolve-library-id`, `query-docs`, `list-library-versions`, `search`, `fetch`. The endpoint uses Streamable HTTP, supports anonymous public lookups with rate limits, and does not require an API key. Never claim that anonymous retrieval provides access to private repositories or user account data.
+Tools: `resolve-library-id`, `query-docs`, `list-library-versions`, `search`, `fetch`.
+The production MCP endpoint now requires OAuth authorization (HTTP 401 with
+`WWW-Authenticate` for anonymous MCP requests). The public REST documentation
+APIs remain anonymous, rate-limited and source-linked. OAuth only grants access
+to the authenticated user's permitted Docsy context; it does not expose
+private repositories or secrets by default.
 
 ## Shared source-of-truth
 
@@ -18,16 +23,23 @@ Tools: `resolve-library-id`, `query-docs`, `list-library-versions`, `search`, `f
 Validate and build the release:
 
     python3 scripts/publishing/package.py --check
-    python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.9.zip
+    python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.10-review.zip
 
 Never include API keys, Firebase service secrets, database URLs, or credential files inside a public plugin ZIP. The package builder uses an explicit file allowlist rather than zipping the entire monorepo.
 
 ## Test before every review
 
-Execute the actual publicly deployed tools, including success/failure cases:
+Run the public OAuth challenge, discovery, anonymous docs and legal-page smoke:
 
     node scripts/publishing/mcp-review-smoke.mjs
 
+For **full five-tool MCP integration**, provide a valid OAuth access token
+using a secure temporary environment (never commit, log, or store it in a
+public GitHub Actions secret with an expiration beyond the token TTL):
+
+    DOCSY_MCP_ACCESS_TOKEN=... node scripts/publishing/mcp-review-smoke.mjs
+
+The anonymous test explicitly reports limited coverage, not a five-tool pass.
 This requires deployed and reachable `/privacy`, `/terms` and `/support` pages. For pre-deploy development only, use `--skip-public-pages`. The test must not be skipped when preparing a real directory submission. Also run the regular repository CI and production smoke. Confirm that all five tools have correct, truthful read-only annotations and no credentials are sent. Source-linked excerpts should be checked against their original documentation.
 
 ## OpenAI / ChatGPT / Codex directory
@@ -39,7 +51,10 @@ Official references:
 
 1. Verify your publisher identity in the OpenAI Platform organization. The verified individual/business name must match the directory publisher. The placeholder contributor attribution in the manifest must be corrected to the verified identity if needed.
 2. Ensure account/project can submit remote MCP plugins and has `api.apps.write`. Projects in EU-only data residency cannot currently submit MCP plugins; use an eligible project.
-3. Upload the verified ZIP from above in the Plugins submission portal using **With MCP**. Connect `https://docsy.remcp.site/mcp/registry` as the universal HTTPS endpoint. Complete the platform's domain challenge. No OAuth is needed for the anonymous public read-only tool set; do not pretend Docsy implements OAuth.
+3. Upload the verified ZIP from above in the Plugins submission portal using **With MCP**. Connect `https://docsy.remcp.site/mcp/registry` as the universal HTTPS endpoint. Complete the platform's domain challenge. Production MCP now requires OAuth 2.1 authorization-code with PKCE S256,
+dynamic client registration and a valid consented Docsy account. Test the
+platform's OAuth connection and all five tools with a real authorized
+review account before submission.
 4. Run **Scan Tools**. Review the live name, descriptions, input schema, annotations, identity and security schemes of all five tools. Provide the four legal/support website URLs, owned logos, and accurate publisher information.
 5. Confirm the five positive and three negative cases embedded in `plugin.json`. Collect real expected results from the smoke test (no forged outputs). Produce an **actual reviewer-accessible demo recording** showing tools working; do not fabricate a video URL or reviewer credentials.
 6. Submit for review and act on feedback. Publish only after approval. Plugin ZIP uploads, verification and directory publishing require the publisher's account permissions.
