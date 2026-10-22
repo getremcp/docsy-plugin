@@ -21,3 +21,16 @@ The independent Gemini CLI extension is released from the private
 `gemini-vX.Y.Z`. The official Gemini CLI Gallery discovers tagged,
 public GitHub repositories with the `gemini-cli-extension` topic;
 gallery indexing is not the same as a confirmed listing.
+
+## Official MCP Registry release gate
+
+The MCP Registry workflow is a separate manual publication action, not a
+shortcut around the plugin release process. It now checks `server.json`
+against the **published stable** GitHub Release corresponding to
+`plugin-v<server.json.version>`; the tagged manifest must be byte-identical,
+the public endpoint/namespace must match and the release must not be draft
+or prerelease. This check executes **before** GitHub OIDC authentication.
+
+Plugin `1.0.10` is still an OAuth review candidate; `server.json` remains
+on the stable `1.0.9` manifest until the new version passes its full release
+gates. Do not promote a candidate by triggering the Registry workflow.
