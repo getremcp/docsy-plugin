@@ -1,6 +1,7 @@
 // Reviewer-oriented public MCP contract verification. No credentials or writes.
 import {readFileSync} from "node:fs";
 import {decodeRpc,requireToolRefusal} from "./review-protocol.mjs";
+import {verifyChallenge,verifyOauthDiscovery,verifyAnonymousDocumentation} from "./oauth-review-contract.mjs";
 const packageMcp=JSON.parse(readFileSync(new URL("../../mcp.json",import.meta.url),"utf8"));
 const defaultMcpUrl=packageMcp.mcpServers?.docsy?.url;
 if(typeof defaultMcpUrl!=="string"||!defaultMcpUrl.startsWith("https://")){
@@ -43,6 +44,45 @@ async function tool(name,args={},ms=40_000){
   const result=await rpc("tools/call",{name,arguments:args},ms);
   assert(!result.isError,"MCP "+name+" isError: "+JSON.stringify(result.content??[]).slice(0,250));
   return (result.content??[]).filter(c=>c.type==="text").map(c=>c.text).join("\n");
+}
+// The directory and interactive OAuth plugin support authenticated MCP.
+// Without an access token the scheduled check validates the real protected
+// resource challenge, PKCE/OAuth discovery and anonymous REST docs instead
+// of pretending it called the five tools successfully.
+if(!accessToken){
+  const unauth=await fetch(mcpUrl,{
+    method:"POST",headers,
+    body:JSON.stringify({
+      jsonrpc:"2.0",id:0,method:"initialize",
+      params:{protocolVersion:"2025-11-25",capabilities:{},
+        clientInfo:{name:"docsy-unauthenticated-review",version:"1.0.0"}}
+    }),
+    signal:timeout(15_000)
+  });
+  if(unauth.status===401){
+    verifyChallenge(unauth,base);
+    await verifyOauthDiscovery(base);
+    console.log("PASS OAuth 401 challenge, protected resource, PKCE metadata");
+    await verifyAnonymousDocumentation(base);
+    console.log("PASS anonymous React resolve and source-linked versioned docs");
+    if(!skipLegal){
+      for(const [path,needle] of [
+        ["/privacy","Privacy policy"],["/terms","Terms of service"],
+        ["/support","GitHub issue tracker"]
+      ]){
+        const res=await fetch(base+path,{signal:timeout(15_000),headers:{accept:"text/html"}});
+        assert(res.ok&&res.headers.get("content-type")?.includes("text/html"),
+          "Missing public directory legal page "+path+" (HTTP "+res.status+")");
+        assert((await res.text()).toLowerCase().includes(needle.toLowerCase()),
+          "Public directory page lacks expected title: "+path);
+      }
+      console.log("PASS privacy, terms and support HTTPS pages");
+    }
+    console.log("Docsy unauthenticated OAuth + public REST smoke: PASS; "+
+      "5-tool MCP end-to-end requires DOCSY_MCP_ACCESS_TOKEN");
+    process.exit(0);
+  }
+  assert(unauth.ok,"Anonymous MCP returned unexpected HTTP "+unauth.status);
 }
 const init=await rpc("initialize",{
   protocolVersion:"2025-11-25",capabilities:{},

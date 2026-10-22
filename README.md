@@ -249,9 +249,14 @@ With Python 3, run:
     python3 -m unittest discover -s scripts/publishing -p 'test_*.py'
     python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.9.zip
 
-For remote MCP and public legal-page smoke tests, run:
+For production OAuth challenge, discovery, public source-linked REST docs,
+and legal-page smoke tests, run:
 
     node scripts/publishing/mcp-review-smoke.mjs
+
+OAuth-authenticated five-tool MCP verification additionally requires
+`DOCSY_MCP_ACCESS_TOKEN` from an authorized account. The anonymous smoke
+does **not** claim to exercise all five MCP tools.
 
 Directory publication requires identity verification, platform review and approval.
 
