@@ -48,23 +48,25 @@ read-only Streamable HTTP MCP endpoint:
     https://docsy.remcp.site/mcp
 
 The five public tools are resolve-library-id, query-docs,
-list-library-versions, search and fetch. Anonymous public lookups do not
-require a Docsy API key. Only public indexed documentation is accessible.
+list-library-versions, search and fetch. The hosted MCP endpoint currently
+requires OAuth 2.1 account authorization, while public REST documentation
+lookups are separately available without a key (subject to rate limits).
+Only public indexed documentation is accessible through the public tools.
 
 ## Next release candidate: OAuth 2.1 (not yet published)
 
 The `v1.0.10` package is being prepared for the existing Docsy OpenAI App.
-It uses OAuth 2.1 with Dynamic Client Registration and the same Docsy Google
-account as the dashboard. **Do not submit this candidate or switch the public
-MCP authentication yet:** backend OAuth, the updated review recording and an
-end-to-end OpenAI consent test must all pass. The approved icon and 512px logo
+It packages OAuth 2.1 Dynamic Client Registration and account-linking setup.
+The hosted MCP endpoint already requests OAuth authorization, but **the plugin
+candidate must not be submitted as a public OpenAI release** until its review
+recording and the full end-to-end consent test are verified. The approved icon and 512px logo
 from the existing brand kit are unchanged.
 
 The version-matched reviewer video URL is reserved in the manifest but **does
 not yet contain an uploaded recording**:
 `https://github.com/getremcp/docsy-plugin/releases/download/plugin-v1.0.10/docsy-review-walkthrough-v1.0.10.mp4`.
 
-After the backend OAuth cutover, Codex CLI uses:
+For the current OAuth-protected MCP endpoint, Codex CLI uses:
 
 ```sh
 codex mcp add docsy --url https://docsy.remcp.site/mcp
@@ -78,6 +80,32 @@ python3 scripts/publishing/package.py --output /tmp/docsy-plugin-v1.0.10.zip
 ```
 
 See [OAuth release checklist](docs/OAUTH-RELEASE-CHECKLIST.md).
+
+## Quick start: Docsy MCP and npm clients
+
+**Website:** https://docsy.remcp.site · **Documentation:** https://docsy.remcp.site/docs · **Support:** https://docsy.remcp.site/support
+
+Docsy works with remote MCP clients and the published npm SDK/CLI. The
+MCP service requires account authorization; installing this plugin does not
+bypass sign-in. To connect using a supported CLI:
+
+~~~sh
+codex mcp add docsy --url https://docsy.remcp.site/mcp
+codex mcp login docsy
+~~~
+
+For terminal documentation lookups instead of MCP:
+
+~~~sh
+npm install --global @remcp/docsy-cli
+docsy library react
+docsy docs /reactjs/react.dev "useEffect cleanup"
+~~~
+
+TypeScript projects can install `@remcp/docsy-sdk` and use
+`new Docsy().searchLibrary("useEffect cleanup", "React")`.
+See the [public SDK/CLI repository](https://github.com/getremcp/docsy)
+for examples, prerequisites, license and releases.
 
 ## Public packages and release policy
 
@@ -135,7 +163,7 @@ codex plugin list
 ```
 
 This is a public, user-installable Codex Git marketplace, **not** a claim of
-approval or publication in the official OpenAI Plugin Directory. The currently deployed remote MCP server supports anonymous public docs; the upcoming OAuth release will require account linking.
+approval or publication in the official OpenAI Plugin Directory. The currently deployed remote MCP endpoint requires Docsy OAuth account authorization; the public plugin package candidate remains under review.
 
 For other MCP clients, use the remote endpoint `https://docsy.remcp.site/mcp`. The official registry manifest is kept in [`server.json`](server.json).
 
@@ -145,7 +173,7 @@ You can connect the hosted read-only Docsy MCP privately; this does **not**
 publish Docsy in the universal OpenAI Plugins Directory.
 
 1. Open **ChatGPT → Plugins** and select **+ → Add custom MCP server**.
-2. Name it **Docsy**, enter **`https://docsy.remcp.site/mcp`**, and select **OAuth 2.1 account linking (after OAuth rollout)**.
+2. Name it **Docsy**, enter **`https://docsy.remcp.site/mcp`**, and select **OAuth 2.1 account linking**.
 3. Review the risk notice and approve the custom connection. Select **Create as a plugin**.
 4. Under **Personal**, install the created plugin. Open **ChatGPT Work** and use **@Docsy**
    to look up versioned documentation with source links.
