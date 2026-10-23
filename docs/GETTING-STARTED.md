@@ -6,6 +6,8 @@ Docsy finds version-aware developer documentation with source links. Use the hos
 
 ## Choose your integration
 
+**[13-client setup matrix: Claude.ai, Devin, OpenCode, Antigravity, Kiro, Warp, Goose, Copilot, Grok Build and more](CLIENT-INTEGRATIONS.md)** — native examples with OAuth verification.
+
 | Client | Setup | Authentication |
 | --- | --- | --- |
 | Codex CLI | [Remote MCP](#codex-cli) | Docsy OAuth |

@@ -85,6 +85,8 @@ See [OAuth release checklist](docs/OAUTH-RELEASE-CHECKLIST.md).
 
 **[Full setup guide: Codex, Claude Code, Cursor, VS Code, ChatGPT, Gemini, SDK and CLI](docs/GETTING-STARTED.md)** — installation, OAuth sign-in and troubleshooting.
 
+**[MCP client catalog — 13 supported setup formats](docs/CLIENT-INTEGRATIONS.md)** — Claude.ai, Devin, OpenCode, Antigravity, Kiro, Warp, Goose, GitHub Copilot IDE, Grok Build and custom agents.
+
 ## Quick start: Docsy MCP and npm clients
 
 **Website:** https://docsy.remcp.site · **Documentation:** https://docsy.remcp.site/docs · **Support:** https://docsy.remcp.site/support
@@ -216,7 +218,7 @@ mean it has been executed. Cursor supports equivalent user-level
 For **Cursor**, use the documented one-click deep link (opens Cursor
 locally; it does **not** imply Cursor Marketplace approval):
 
-[Add Docsy MCP to Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=docsy&config=eyJkb2NzeSI6eyJ1cmwiOiJodHRwczovL2RvY3N5LnJlbWNwLnNpdGUvbWNwL3JlZ2lzdHJ5In19)
+[Add Docsy MCP to Cursor](cursor://anysphere.cursor-deeplink/mcp/install?name=docsy&config=eyJkb2NzeSI6eyJ1cmwiOiJodHRwczovL2RvY3N5LnJlbWNwLnNpdGUvbWNwIn19)
 
 You can regenerate and verify the link with
 `python3 scripts/publishing/cursor_deeplink.py`.
