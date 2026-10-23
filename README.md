@@ -2,17 +2,18 @@
   <img src="assets/docsy-icon-192.png" width="104" height="104" alt="Docsy logo">
 </p>
 
-<h1 align="center">Docsy</h1>
+<h1 align="center">Docsy MCP Plugin</h1>
 
 <p align="center"><strong>Current documentation. Exact versions. Verifiable sources.</strong></p>
 
-<p align="center">Version-aware developer documentation, available from your AI assistant through read-only MCP.</p>
+<p align="center">Bring official, version-specific developer docs into ChatGPT, Claude Code, Codex and other AI clients — with source links.</p>
 
 <p align="center">
   <a href="https://github.com/getremcp/docsy-plugin/releases/latest"><img alt="Stable plugin release" src="https://img.shields.io/github/v/release/getremcp/docsy-plugin?style=flat-square&label=stable"></a>
   <a href="https://github.com/getremcp/docsy-plugin/releases"><img alt="Release downloads" src="https://img.shields.io/github/downloads/getremcp/docsy-plugin/total?style=flat-square&label=downloads"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-1f2328?style=flat-square"></a>
   <a href="https://github.com/getremcp/docsy-plugin/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/getremcp/docsy-plugin?style=flat-square"></a>
+  <a href="https://github.com/getremcp/docsy-plugin/actions/workflows/plugin-quality.yml"><img alt="Release validation status" src="https://img.shields.io/github/actions/workflow/status/getremcp/docsy-plugin/plugin-quality.yml?branch=main&label=release%20checks&style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -35,7 +36,7 @@
 ---
 
 
-## Two ways to use Docsy
+## Choose how to use Docsy
 
 | AI assistants | Developer tooling |
 | --- | --- |
