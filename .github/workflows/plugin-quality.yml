@@ -1,90 +1,62 @@
 name: Public plugin quality
-
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: '17 7 * * *'
-
 permissions:
   contents: read
-
-concurrency:
-  group: public-plugin-quality-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   package:
     name: Manifest and release packaging
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - name: Validate package identity and deterministic ZIP
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Enforce exact public release boundary and package
+        shell: bash
         run: |
-          set -euo pipefail
-          python3 scripts/publishing/package.py --check
-          python3 -m unittest discover -s scripts/publishing -p 'test_*.py'
-          node --check scripts/publishing/mcp-review-smoke.mjs
-          node --test scripts/publishing/test_review_protocol.mjs
-          node --check scripts/publishing/review-demo-data.mjs
-          python3 -m py_compile scripts/publishing/render-review-demo.py
-          python3 scripts/publishing/package.py --output "${RUNNER_TEMP}/docsy-plugin.zip"
-          unzip -l "${RUNNER_TEMP}/docsy-plugin.zip"
-          sha256sum "${RUNNER_TEMP}/docsy-plugin.zip"
-      - name: Validate official Agent Plugins schemas
-        run: |
-          python3 -m pip install --disable-pip-version-check 'jsonschema==4.25.1'
           python3 - <<'PY'
-          import json,urllib.request,jsonschema,sys
-          sys.path.insert(0, 'scripts/publishing')
-          from openai_oauth_overlay import portable_mcp_for_schema
-          for name in ('plugin','mcp'):
-              with urllib.request.urlopen(
-                  'https://agent-plugins.org/schemas/1.0.0/'+name+'.schema.json',
-                  timeout=20
-              ) as response:
-                  schema=json.load(response)
-              with open(name+'.json',encoding='utf-8') as f:
-                  manifest=json.load(f)
-              # The base Agent Plugins 1.0.0 MCP schema excludes vendor
-              # extensions. Validate OpenAI OAuth fields exactly before
-              # validating the portable projection against the base schema.
-              portable = portable_mcp_for_schema(manifest) if name=='mcp' else manifest
-              jsonschema.Draft202012Validator(schema).validate(portable)
-              print(name,'portable schema and OAuth overlay valid')
+          import hashlib,json,pathlib,re,zipfile
+          root=pathlib.Path('.')
+          allowed={
+            '.agents/plugins/marketplace.json',
+            '.claude-plugin/marketplace.json','.claude-plugin/plugin.json',
+            '.cursor/mcp.json','.mcp.json','.gitignore',
+            'README.md','LICENSE','SECURITY.md','plugin.json','mcp.json','server.json',
+            '.github/workflows/plugin-quality.yml',
+            '.github/workflows/release-integrity.yml',
+            '.github/workflows/mcp-registry-publish.yml',
+            'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+            'assets/docsy-logo-dark-512.png','assets/docsy-wordmark-inverse.svg',
+            'assets/docsy-wordmark.svg','assets/github-social-preview-1280x640.png',
+            'docs/GETTING-STARTED.md','docs/CLIENT-INTEGRATIONS.md',
+            'docs/BRAND-ASSETS.md','skills/find-docs/SKILL.md',
+          }
+          actual={p.as_posix() for p in root.rglob('*')
+                  if p.is_file() and '.git' not in p.parts}
+          assert actual==allowed, 'Unapproved public paths: '+str(sorted(actual^allowed))
+          plugin=json.loads(pathlib.Path('plugin.json').read_text())
+          mcp=json.loads(pathlib.Path('mcp.json').read_text())
+          server=json.loads(pathlib.Path('server.json').read_text())
+          assert plugin['name']=='docsy'
+          assert re.fullmatch(r'\d+\.\d+\.\d+',plugin['version'])
+          assert mcp['mcpServers']['docsy']['url']=='https://docsy.remcp.site/mcp'
+          assert server['name']=='io.github.getremcp/docsy'
+          assert server['remotes'][0]['url']=='https://docsy.remcp.site/mcp/registry'
+          assert not any(p.is_symlink() for p in root.rglob('*') if '.git' not in p.parts)
+          names=['plugin.json','mcp.json','skills/find-docs/SKILL.md',
+                 'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+                 'assets/docsy-logo-dark-512.png']
+          dest=pathlib.Path('/tmp/docsy-plugin-check.zip')
+          with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
+            for name in sorted(names):
+              info=zipfile.ZipInfo(name,(2026,10,11,0,0,0))
+              info.compress_type=zipfile.ZIP_DEFLATED
+              info.external_attr=0o644<<16
+              archive.writestr(info,pathlib.Path(name).read_bytes(),
+                               compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+          assert zipfile.ZipFile(dest).namelist()==sorted(names)
+          print('PASS strict allowlist',len(actual),'paths; version',plugin['version'])
+          print('Build checksum:',hashlib.sha256(dest.read_bytes()).hexdigest())
           PY
-      - name: Upload allowlisted package
-        uses: actions/upload-artifact@v4
-        with:
-          name: docsy-plugin-review-package
-          path: ${{ runner.temp }}/docsy-plugin.zip
-          if-no-files-found: error
-          retention-days: 30
-
-  remote-mcp-smoke:
-    name: Public MCP and policy smoke
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - name: Verify canonical public MCP and legal pages
-        run: node scripts/publishing/mcp-review-smoke.mjs
-      # The existing OpenAI Platform submission is permanently bound to this
-      # legacy alias. Keep monitoring it until that application is retired.
-      - name: Verify original OpenAI Platform MCP alias
-        env:
-          DOCSY_MCP_URL: https://docsy.remcp.site/mcp
-        run: node scripts/publishing/mcp-review-smoke.mjs
