@@ -27,11 +27,21 @@
   <a href="https://docsy.remcp.site/docs">Docs</a> ·
   <a href="docs/GETTING-STARTED.md">Setup guide</a> ·
   <a href="docs/CLIENT-INTEGRATIONS.md">AI clients</a> ·
+  <a href="https://github.com/getremcp/docsy"><strong>SDK & CLI repository ↗</strong></a> ·
   <a href="https://github.com/getremcp/docsy-plugin/releases">Releases</a> ·
   <a href="https://docsy.remcp.site/support">Support</a>
 </p>
 
 ---
+
+
+## Two ways to use Docsy
+
+| AI assistants | Developer tooling |
+| --- | --- |
+| **[Docsy AI / MCP Plugin →](https://github.com/getremcp/docsy-plugin)** — connect ChatGPT, Claude Code, Codex or Cursor | **[Docsy SDK & CLI →](https://github.com/getremcp/docsy)** — install TypeScript SDK, npm CLI or Gemini CLI extension |
+
+These are **separate release repositories** for the same remote Docsy service. Neither contains private crawling infrastructure.
 
 ## Source-linked documentation for AI
 
