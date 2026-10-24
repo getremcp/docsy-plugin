@@ -32,7 +32,8 @@ jobs:
             'assets/docsy-logo-dark-512.png','assets/docsy-wordmark-inverse.svg',
             'assets/docsy-wordmark.svg','assets/github-social-preview-1280x640.png',
             'docs/GETTING-STARTED.md','docs/CLIENT-INTEGRATIONS.md',
-            'docs/BRAND-ASSETS.md','skills/find-docs/SKILL.md',
+            'docs/BRAND-ASSETS.md','docs/DISTRIBUTION-STATUS.md',
+            'skills/find-docs/SKILL.md',
           }
           actual={p.as_posix() for p in root.rglob('*')
                   if p.is_file() and '.git' not in p.parts}
