@@ -128,7 +128,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | CheckMCP | [Free submission](https://checkmcp.dev/submit) | Free audit queued 24 Oct 2026; not audited/verified yet |
 | ProMCP | [Free submission](https://www.promcpservers.com/submit) | Submitted for manual review 24 Oct 2026 |
 | MCPfinder | [Free submission](https://www.mcpfinder.org/submit) | Submitted successfully 24 Oct 2026; reliability review pending |
-| Launch MCP | [Free submission instructions](https://launchmcp.co/submit) | Maintainer email sent 24 Oct 2026; community account/upvote process still outstanding |
+| Launch MCP | [Submission dashboard](https://launchmcp.co/dashboard) | **Submitted from publisher account** 24 Oct 2026; 3/3 community upvotes and website badge verified; **under editorial review**, not yet publicly listed |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
