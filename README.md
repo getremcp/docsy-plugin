@@ -172,6 +172,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
 | ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
 | mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
+| Docker MCP Registry | [PR #6062](https://github.com/docker/mcp-registry/pull/6062) | Submitted 24 Oct 2026; pending Docker manual review and OAuth integration validation |
 | ToolHive Catalog | [PR #1781](https://github.com/stacklok/toolhive-catalog/pull/1781) | Submitted; catalog review required |
 | best-of-mcp-servers | [PR #561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) | Submitted; YAML validation passed; review required |
 | Awesome MCP List (MobinX) | [PR #926](https://github.com/MobinX/awesome-mcp-list/pull/926) | Submitted; maintainer review pending |

@@ -38,6 +38,7 @@ All below were verified **open on 24 October 2026**; do not create duplicate PRs
 | Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
 | ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
+| Docker MCP Registry | [#6062](https://github.com/docker/mcp-registry/pull/6062) — review pending |
 | ToolHive | [#1781](https://github.com/stacklok/toolhive-catalog/pull/1781) |
 | best-of-mcp-servers | [#561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) |
 | MobinX | [#926](https://github.com/MobinX/awesome-mcp-list/pull/926) |
