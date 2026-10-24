@@ -27,7 +27,9 @@
   <a href="https://www.npmjs.com/package/@remcp/docsy-cli"><img alt="npm CLI version" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-cli?style=flat-square&label=npm%20CLI"></a>
 </p>
 
-[![Docsy MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.getremcp/docsy)
+<p align="center">
+  <a href="https://glama.ai/mcp/connectors/io.github.getremcp/docsy"><img alt="Docsy MCP connector – tool definition quality and endpoint health on Glama" src="https://glama.ai/mcp/connectors/io.github.getremcp/docsy/badges/score.svg"></a>
+</p>
 
 <p align="center">
   <a href="https://docsy.remcp.site">Website</a> ·
