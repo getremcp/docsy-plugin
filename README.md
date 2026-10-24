@@ -197,6 +197,7 @@ These are independent community sites; listing policies and review decisions are
 | [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published `io.github.getremcp/docsy` discovery record |
 | [npm SDK](https://www.npmjs.com/package/@remcp/docsy-sdk) | `@remcp/docsy-sdk` TypeScript documentation lookup |
 | [npm CLI](https://www.npmjs.com/package/@remcp/docsy-cli) | `@remcp/docsy-cli` terminal documentation lookup |
+| [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | Public SDK and CLI source listed and automatically approved 24 Oct 2026 |
 
 **Stable:** [plugin-v1.0.9](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9). **Review candidate (prerelease):** [plugin-v1.0.10](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.10). Pre-releases are candidates, not proof of marketplace approval.
 
