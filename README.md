@@ -175,6 +175,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
 | ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
 | mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
+| Awesome Remote MCP Servers (jaw9c) | [PR #1636](https://github.com/jaw9c/awesome-remote-mcp-servers/pull/1636) | Submitted 24 Oct 2026; hosted OAuth listing pending review |
 | Brethof AI Awesome MCP Servers | [PR #53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) | Submitted 24 Oct 2026; hosted OAuth details documented; awaiting review |
 | MCPRepository | [Submission status](https://mcprepository.com/getremcp/docsy-plugin) | Indexing queued 24 Oct 2026; permalink still HTTP 404; not published |
 | Docker MCP Registry | [PR #6062](https://github.com/docker/mcp-registry/pull/6062) | Submitted 24 Oct 2026; pending Docker manual review and OAuth integration validation |
