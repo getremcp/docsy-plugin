@@ -18,6 +18,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
+| Sagargupta Awesome MCP Servers | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | PR merged 24 Oct 2026; included in the GitHub catalog |
 | Awesome Remote MCP Servers | [Docsy entry](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Public listing; confirmed from upstream GitHub README 24 Oct 2026 |
 | mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
@@ -30,7 +31,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Twelve PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
+Eleven PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -38,7 +39,6 @@ Twelve PRs below were submitted or checked **open on 24 October 2026**; do not c
 | Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
 | ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
-| Sagargupta Awesome MCP Servers | [#212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) — all automated checks passed; merge pending |
 | AI Anytime Awesome MCP Servers | [#313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) — review pending |
 | Brethof AI Awesome MCP Servers | [#53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) — review pending |
 | Docker MCP Registry | [#6062](https://github.com/docker/mcp-registry/pull/6062) — review pending |
