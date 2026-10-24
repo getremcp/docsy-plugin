@@ -50,6 +50,8 @@ Ten PRs below were submitted or checked **open on 24 October 2026**; do not crea
 
 ## Other submitted channels (not independently approved)
 
+[MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) accepted the Docsy GitHub repo for indexing on 24 Oct 2026: `valid: true`, `status: queued`, `duplicate: false`. The generated permalink currently returns HTTP 404, so this is **not** a verified published listing.
+
 Also confirmed: [MCP.Directory](https://mcp.directory/submit) returned HTTP 409 for the Docsy GitHub URL on 24 October 2026, reporting that the repository had already been submitted and is awaiting review. No duplicate submission was made.
 
 Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
