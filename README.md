@@ -177,6 +177,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | Launch MCP | [Submission dashboard](https://launchmcp.co/dashboard) | **Submitted from publisher account** 24 Oct 2026; 3/3 community upvotes and website badge verified; **under editorial review**, not yet publicly listed |
 | Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Submitted through authenticated Google session; automated security scan in progress, **not publicly visible yet** |
 | AIBase MCP | [Publisher submission manager](https://aibase.com/user/submitManage?tab=mcp) | Submitted from Google account with official logo and OAuth Streamable HTTP config; **pending review** |
+| ClaudePluginHub (independent) | [Plugin and marketplace submission](https://www.claudepluginhub.com/tools/submit-plugin) | **Both plugin and marketplace submitted** from authenticated publisher account 24 Oct 2026; indexed only after automated validation, **not official Anthropic approval** |
 | GitHub MCP Registry (VS Code / Copilot) | [Onboarding request](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953) | Official registry identity, tools, OAuth, docs and license provided; **manual curation pending** |
 | TensorBlock awesome-mcp-servers | [PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Automatically proposed by TensorBlock; **review pending**, do not duplicate |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
@@ -185,7 +186,7 @@ The following entries are **submitted, not yet approved**; they are not official
 
 These are independent community sites; listing policies and review decisions are controlled by their maintainers.
 
-**Unavailable route:** Smithery accepted publisher Google sign-in but its publishing API returned `403 Updating servers has been removed` on 24 Oct 2026; no Smithery publication is claimed. The Claude Connectors Directory required a paid Claude plan on the signed-in account.
+**Unavailable route:** Smithery accepted publisher Google sign-in but its publishing API returned `403 Updating servers has been removed` on 24 Oct 2026; no Smithery publication is claimed. The Claude Connectors Directory required a paid Claude plan on the signed-in account. LobeHub Market CLI publisher OAuth was completed, but GitHub ownership linkage requires an additional GitHub passkey confirmation; no LobeHub listing has been submitted.
 
 </details>
 
