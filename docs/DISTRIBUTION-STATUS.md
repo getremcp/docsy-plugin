@@ -18,6 +18,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
+| Awesome Remote MCP Servers | [Docsy entry](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Public listing; confirmed from upstream GitHub README 24 Oct 2026 |
 | mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
 | LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
