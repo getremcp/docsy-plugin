@@ -2,7 +2,7 @@
   "mcpServers": {
     "docsy": {
       "type": "http",
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
