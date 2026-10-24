@@ -175,6 +175,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
 | ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
 | mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
+| Awesome DevOps MCP Servers | [PR #382](https://github.com/rohitg00/awesome-devops-mcp-servers/pull/382) | Submitted 24 Oct 2026; read-only developer docs catalog entry awaiting review |
 | MindPal Awesome Remote MCP Servers | [PR #230](https://github.com/sylviangth/awesome-remote-mcp-servers/pull/230) | Submitted 24 Oct 2026; hosted OAuth listing pending review |
 | YuzeHao Awesome MCP Servers | [PR #718](https://github.com/YuzeHao2023/Awesome-MCP-Servers/pull/718) | Submitted 24 Oct 2026; pending upstream review |
 | Awesome Remote MCP Servers (jaw9c) | [PR #1636](https://github.com/jaw9c/awesome-remote-mcp-servers/pull/1636) | Submitted 24 Oct 2026; hosted OAuth listing pending review |
