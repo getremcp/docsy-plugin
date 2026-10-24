@@ -155,6 +155,8 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [mcpub](https://mcpub.dev) | `https://docsy.remcp.site/mcp/registry` | Registered 24 Oct 2026; listed in discovery |
 | [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | Public page returned HTTP 200 on 24 Oct 2026 |
 | [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | [SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
+| [Awesome Gemini CLI Extensions](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | [Docsy PR #96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | Submitted 24 Oct 2026; awaiting upstream review |
+| [AlexMili Awesome MCP](https://github.com/AlexMili/Awesome-MCP/pull/326) | [Docsy PR #326](https://github.com/AlexMili/Awesome-MCP/pull/326) | Submitted 24 Oct 2026; awaiting upstream review |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
 | [Claude Code community marketplace](.claude-plugin/marketplace.json) | `claude plugin marketplace add getremcp/docsy-plugin` | GitHub-installable, not official Anthropic marketplace approval |
