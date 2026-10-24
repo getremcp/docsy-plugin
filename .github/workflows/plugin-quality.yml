@@ -28,6 +28,7 @@ jobs:
             '.github/workflows/release-integrity.yml',
             '.github/workflows/mcp-registry-publish.yml',
             'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+            'assets/docsy-marketplace-400.png',
             'assets/docsy-logo-dark-512.png','assets/docsy-wordmark-inverse.svg',
             'assets/docsy-wordmark.svg','assets/github-social-preview-1280x640.png',
             'docs/GETTING-STARTED.md','docs/CLIENT-INTEGRATIONS.md',
