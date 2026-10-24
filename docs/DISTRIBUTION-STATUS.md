@@ -30,7 +30,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-All below were verified **open on 24 October 2026**; do not create duplicate PRs.
+Eleven PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -38,6 +38,8 @@ All below were verified **open on 24 October 2026**; do not create duplicate PRs
 | Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
 | ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
+| AI Anytime Awesome MCP Servers | [#313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) — review pending |
+| Brethof AI Awesome MCP Servers | [#53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) — review pending |
 | Docker MCP Registry | [#6062](https://github.com/docker/mcp-registry/pull/6062) — review pending |
 | ToolHive | [#1781](https://github.com/stacklok/toolhive-catalog/pull/1781) |
 | best-of-mcp-servers | [#561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) |
@@ -45,6 +47,8 @@ All below were verified **open on 24 October 2026**; do not create duplicate PRs
 | TensorBlock | [#4485 (draft)](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) |
 
 ## Other submitted channels (not independently approved)
+
+Also confirmed: [MCP.Directory](https://mcp.directory/submit) returned HTTP 409 for the Docsy GitHub URL on 24 October 2026, reporting that the repository had already been submitted and is awaiting review. No duplicate submission was made.
 
 Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [Cursor Directory](https://cursor.directory/plugins/docsy), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
 
