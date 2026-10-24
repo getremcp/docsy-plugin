@@ -109,7 +109,10 @@ These public distribution records were verified on 24 October 2026:
 
 Older discovery records under `io.github.antonbaider/docsy` may remain indexed; **use the organization namespace** `io.github.getremcp/docsy` for new installations. Glama publisher ownership was confirmed by the Glama administration UI on 24 Oct 2026; its live badge reports current independent health and quality checks. Other directories and official marketplaces remain subject to their own reviews.
 
-### Other marketplace submissions awaiting review
+<details>
+<summary><strong>Directory submissions awaiting independent review · expand status table</strong></summary>
+
+### Submission review queue
 
 The following entries are **submitted, not yet approved**; they are not official marketplace endorsement:
 
@@ -131,6 +134,8 @@ The following entries are **submitted, not yet approved**; they are not official
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
 
 These are independent community sites; listing policies and review decisions are controlled by their maintainers.
+
+</details>
 
 ## Releases and packages
 
