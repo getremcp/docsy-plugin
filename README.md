@@ -147,6 +147,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | Channel | Record | Status |
 | --- | --- | --- |
 | [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | `io.github.getremcp/docsy`, v1.0.9 | Published / active |
+| [Cursor Directory](https://cursor.directory/plugins/docsy) | Public Docsy plugin page with **Add to Cursor** and canonical OAuth endpoint | Publicly accessible, verified in Chrome on 24 Oct 2026; not an official Cursor endorsement |
 | [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Remote connector exposing five tools | Listed and publisher-claimed (24 Oct 2026); DNS ownership and OAuth test confirmed |
 | [Sagargupta Awesome MCP Servers](https://github.com/Sagargupta16/awesome-mcp-servers) | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | Published in GitHub catalog 24 Oct 2026; external site sync may lag |
 | [Awesome Remote MCP Servers](https://github.com/punkpeye/awesome-remote-mcp-servers) | [Docsy in curated remote-server list](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Already publicly listed with canonical OAuth endpoint and Glama badge |
@@ -183,7 +184,6 @@ The following entries are **submitted, not yet approved**; they are not official
 | ProMCP | [Free submission](https://www.promcpservers.com/submit) | Submitted for manual review 24 Oct 2026 |
 | MCPfinder | [Free submission](https://www.mcpfinder.org/submit) | Submitted successfully 24 Oct 2026; reliability review pending |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | **Publicly indexed 24 Oct 2026**; 3/3 upvotes and site verification accepted. Publisher page still reports missing structured MCP install/tools metadata; completeness is not yet verified |
-| Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Submitted through authenticated Google session; automated security scan in progress, **not publicly visible yet** |
 | AIBase MCP | [Publisher submission manager](https://aibase.com/user/submitManage?tab=mcp) | Submitted from Google account with official logo and OAuth Streamable HTTP config; **pending review** |
 | ClaudePluginHub (independent) | [Plugin and marketplace submission](https://www.claudepluginhub.com/tools/submit-plugin) | **Both plugin and marketplace submitted** from authenticated publisher account 24 Oct 2026; indexed only after automated validation, **not official Anthropic approval** |
 | GitHub MCP Registry (VS Code / Copilot) | [Onboarding request](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953) | Official registry identity, tools, OAuth, docs and license provided; **manual curation pending** |

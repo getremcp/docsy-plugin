@@ -17,6 +17,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | Channel | Public link | Status |
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
+| Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Public page verified 24 Oct 2026; Add to Cursor uses the canonical OAuth MCP endpoint |
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
 | Sagargupta Awesome MCP Servers | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | PR merged 24 Oct 2026; included in the GitHub catalog |
 | Awesome Remote MCP Servers | [Docsy entry](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Public listing; confirmed from upstream GitHub README 24 Oct 2026 |
@@ -51,7 +52,7 @@ Eleven PRs below were submitted or checked **open on 24 October 2026**; do not c
 
 Also confirmed: [MCP.Directory](https://mcp.directory/submit) returned HTTP 409 for the Docsy GitHub URL on 24 October 2026, reporting that the repository had already been submitted and is awaiting review. No duplicate submission was made.
 
-Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [Cursor Directory](https://cursor.directory/plugins/docsy), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
+Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
 
 [Plug and Ship](https://plugandship.dev/p/docsy-mcp) is scheduled for **11 November 2026**, not launched. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
 
