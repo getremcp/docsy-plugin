@@ -34,6 +34,7 @@
 <p align="center">
   <a href="https://docsy.remcp.site">Website</a> ·
   <a href="https://docsy.remcp.site/docs">Docs</a> ·
+  <a href="docs/DISTRIBUTION-STATUS.md">Directory status</a> ·
   <a href="docs/GETTING-STARTED.md">Setup guide</a> ·
   <a href="docs/CLIENT-INTEGRATIONS.md">AI clients</a> ·
   <a href="https://github.com/getremcp/docsy"><strong>SDK & CLI repository ↗</strong></a> ·
@@ -141,13 +142,15 @@ For additional clients, see the **[Full setup guide: connecting Docsy to your AI
 
 ## Discover Docsy
 
-These public distribution records were verified on 24 October 2026:
+These public distribution records were verified on 24 October 2026. See the [full distribution matrix](docs/DISTRIBUTION-STATUS.md) for directory links, pending reviews and Smithery migration:
 
 | Channel | Record | Status |
 | --- | --- | --- |
 | [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | `io.github.getremcp/docsy`, v1.0.9 | Published / active |
 | [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Remote connector exposing five tools | Listed and publisher-claimed (24 Oct 2026); DNS ownership and OAuth test confirmed |
 | [mcpub](https://mcpub.dev) | `https://docsy.remcp.site/mcp/registry` | Registered 24 Oct 2026; listed in discovery |
+| [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | Public page returned HTTP 200 on 24 Oct 2026 |
+| [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | [SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
 | [Claude Code community marketplace](.claude-plugin/marketplace.json) | `claude plugin marketplace add getremcp/docsy-plugin` | GitHub-installable, not official Anthropic marketplace approval |
 | [Gemini CLI extension](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | Tagged extension manifest in the [SDK & CLI repository](https://github.com/getremcp/docsy) | GitHub release, not gallery approval |
@@ -186,7 +189,7 @@ The following entries are **submitted, not yet approved**; they are not official
 
 These are independent community sites; listing policies and review decisions are controlled by their maintainers.
 
-**Unavailable route:** Smithery accepted publisher Google sign-in but its publishing API returned `403 Updating servers has been removed` on 24 Oct 2026; no Smithery publication is claimed. The Claude Connectors Directory required a paid Claude plan on the signed-in account. LobeHub Market CLI publisher OAuth was completed, but GitHub ownership linkage requires an additional GitHub passkey confirmation; no LobeHub listing has been submitted.
+**Smithery transition:** The [official notice](https://smithery.ai/future) confirms its API, proxy, CLI/SDK and connection management shut down on **31 October 2026**. The public directory remains curated by Arcade.dev. The publisher response `403 Updating servers has been removed` is a retired API, not a Docsy failure; no new Smithery publication is claimed. Install through the direct OAuth endpoint above, not Smithery proxy or CLI. See [distribution status](docs/DISTRIBUTION-STATUS.md). The Claude Connectors Directory required a paid Claude plan on the signed-in account. LobeHub Market CLI publisher OAuth was completed, but GitHub ownership linkage requires an additional GitHub passkey confirmation; no LobeHub listing has been submitted.
 
 </details>
 

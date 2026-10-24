@@ -1,0 +1,57 @@
+# Docsy public distribution status
+
+Checked **24 October 2026**. A submitted directory listing is **not** an approved marketplace installation.
+
+## Connect directly
+
+- Website: https://docsy.remcp.site
+- **Canonical OAuth 2.1 MCP endpoint:** `https://docsy.remcp.site/mcp/registry`
+- [Plugin releases](https://github.com/getremcp/docsy-plugin/releases)
+- [SDK & CLI repository](https://github.com/getremcp/docsy)
+- [Getting started](GETTING-STARTED.md) · [AI client integrations](CLIENT-INTEGRATIONS.md)
+
+The MCP endpoint intentionally returns **401** without authorization. Production `/readyz` returned **200** on 24 October 2026.
+
+## Public listings and packages
+
+| Channel | Public link | Status |
+| --- | --- | --- |
+| Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
+| Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
+| mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
+| Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
+| LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
+| GitHub | [Plugin stable v1.0.9](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9) | Stable release |
+| GitHub | [Plugin prerelease v1.0.10](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.10) | Review candidate, not official approval |
+| npm | [SDK](https://www.npmjs.com/package/@remcp/docsy-sdk) · [CLI](https://www.npmjs.com/package/@remcp/docsy-cli) | Published packages |
+| Claude Code community | [Marketplace manifest](../.claude-plugin/marketplace.json) | GitHub-installable; not official Anthropic approval |
+| Gemini CLI | [Extension release](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | GitHub release; not official gallery approval |
+
+## GitHub submissions pending third-party review
+
+All below were verified **open on 24 October 2026**; do not create duplicate PRs.
+
+| Channel | Pending PR |
+| --- | --- |
+| Cline | [#332](https://github.com/cline/marketplace/pull/332) |
+| Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
+| ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
+| mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
+| ToolHive | [#1781](https://github.com/stacklok/toolhive-catalog/pull/1781) |
+| best-of-mcp-servers | [#561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) |
+| MobinX | [#926](https://github.com/MobinX/awesome-mcp-list/pull/926) |
+| TensorBlock | [#4485 (draft)](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) |
+
+## Other submitted channels (not independently approved)
+
+Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [Cursor Directory](https://cursor.directory/plugins/docsy), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
+
+[Plug and Ship](https://plugandship.dev/p/docsy-mcp) is scheduled for **11 November 2026**, not launched. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
+
+## Smithery sunset — 31 October 2026
+
+[Smithery's official notice](https://smithery.ai/future) confirms that API, hosted proxies at `server.smithery.ai` and `run.tools`, Connect, Toolbox, accounts and keys, CLI and SDKs stop on **31 October 2026**. Smithery remains a curated, non-proxied directory under Arcade.dev.
+
+Docsy's earlier update returned `403 Updating servers has been removed`: this is a retired publishing API, **not** a broken Docsy MCP. No new Smithery listing is claimed. Do not offer Smithery CLI/proxy installation. Keep Docsy OAuth 2.1 and Cloudflare protections.
+
+**Statuses:** Published means verified public listing; submitted means awaiting review; scheduled means future release. Never equate listings with official OpenAI, Anthropic or Cursor marketplace approval.
