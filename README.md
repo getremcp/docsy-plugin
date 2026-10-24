@@ -115,6 +115,21 @@ codex mcp add docsy --url https://docsy.remcp.site/mcp/registry
 codex mcp login docsy
 ```
 
+**Generic MCP client configuration**
+
+For clients that accept a remote HTTP MCP JSON configuration, use the canonical endpoint. The client will prompt for Docsy OAuth 2.1 sign-in.
+
+```json
+{
+  "mcpServers": {
+    "docsy": {
+      "type": "http",
+      "url": "https://docsy.remcp.site/mcp/registry"
+    }
+  }
+}
+```
+
 **Claude Code community marketplace**
 
 ```sh
