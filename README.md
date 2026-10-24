@@ -175,11 +175,17 @@ The following entries are **submitted, not yet approved**; they are not official
 | ProMCP | [Free submission](https://www.promcpservers.com/submit) | Submitted for manual review 24 Oct 2026 |
 | MCPfinder | [Free submission](https://www.mcpfinder.org/submit) | Submitted successfully 24 Oct 2026; reliability review pending |
 | Launch MCP | [Submission dashboard](https://launchmcp.co/dashboard) | **Submitted from publisher account** 24 Oct 2026; 3/3 community upvotes and website badge verified; **under editorial review**, not yet publicly listed |
+| Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Submitted through authenticated Google session; automated security scan in progress, **not publicly visible yet** |
+| AIBase MCP | [Publisher submission manager](https://aibase.com/user/submitManage?tab=mcp) | Submitted from Google account with official logo and OAuth Streamable HTTP config; **pending review** |
+| GitHub MCP Registry (VS Code / Copilot) | [Onboarding request](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953) | Official registry identity, tools, OAuth, docs and license provided; **manual curation pending** |
+| TensorBlock awesome-mcp-servers | [PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Automatically proposed by TensorBlock; **review pending**, do not duplicate |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
 
 These are independent community sites; listing policies and review decisions are controlled by their maintainers.
+
+**Unavailable route:** Smithery accepted publisher Google sign-in but its publishing API returned `403 Updating servers has been removed` on 24 Oct 2026; no Smithery publication is claimed. The Claude Connectors Directory required a paid Claude plan on the signed-in account.
 
 </details>
 
