@@ -119,6 +119,12 @@ The following entries are **submitted, not yet approved**; they are not official
 | Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
 | ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
 | mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
+| ToolHive Catalog | [PR #1781](https://github.com/stacklok/toolhive-catalog/pull/1781) | Submitted; catalog review required |
+| best-of-mcp-servers | [PR #561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) | Submitted; YAML validation passed; review required |
+| CheckMCP | [Free submission](https://checkmcp.dev/submit) | Free audit queued 24 Oct 2026; not audited/verified yet |
+| ProMCP | [Free submission](https://www.promcpservers.com/submit) | Submitted for manual review 24 Oct 2026 |
+| MCPfinder | [Free submission](https://www.mcpfinder.org/submit) | Submitted successfully 24 Oct 2026; reliability review pending |
+| Launch MCP | [Free submission instructions](https://launchmcp.co/submit) | Maintainer email sent 24 Oct 2026; community account/upvote process still outstanding |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
