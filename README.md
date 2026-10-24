@@ -147,6 +147,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | Channel | Record | Status |
 | --- | --- | --- |
 | [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | `io.github.getremcp/docsy`, v1.0.9 | Published / active |
+| [AI Anytime Awesome MCP Servers](https://github.com/AIAnytime/Awesome-MCP-Servers) | [Docsy PR #313 merged](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Published 24 Oct 2026; hosted OAuth MCP entry in public directory |
 | [Cursor Directory](https://cursor.directory/plugins/docsy) | Public Docsy plugin page with **Add to Cursor** and canonical OAuth endpoint | Publicly accessible, verified in Chrome on 24 Oct 2026; not an official Cursor endorsement |
 | [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Remote connector exposing five tools | Listed and publisher-claimed (24 Oct 2026); DNS ownership and OAuth test confirmed |
 | [Sagargupta Awesome MCP Servers](https://github.com/Sagargupta16/awesome-mcp-servers) | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | Published in GitHub catalog 24 Oct 2026; external site sync may lag |
@@ -174,7 +175,6 @@ The following entries are **submitted, not yet approved**; they are not official
 | Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
 | ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
 | mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
-| AI Anytime Awesome MCP Servers | [PR #313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Submitted 24 Oct 2026; data and generated directory validated; awaiting review |
 | Brethof AI Awesome MCP Servers | [PR #53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) | Submitted 24 Oct 2026; hosted OAuth details documented; awaiting review |
 | Docker MCP Registry | [PR #6062](https://github.com/docker/mcp-registry/pull/6062) | Submitted 24 Oct 2026; pending Docker manual review and OAuth integration validation |
 | ToolHive Catalog | [PR #1781](https://github.com/stacklok/toolhive-catalog/pull/1781) | Submitted; catalog review required |

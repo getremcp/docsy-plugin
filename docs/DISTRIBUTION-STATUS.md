@@ -17,6 +17,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | Channel | Public link | Status |
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
+| AI Anytime Awesome MCP Servers | [Merged PR #313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Published in GitHub catalog on 24 Oct 2026 |
 | Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Public page verified 24 Oct 2026; Add to Cursor uses the canonical OAuth MCP endpoint |
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
 | Sagargupta Awesome MCP Servers | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | PR merged 24 Oct 2026; included in the GitHub catalog |
@@ -32,7 +33,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Eleven PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
+Ten PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -40,7 +41,6 @@ Eleven PRs below were submitted or checked **open on 24 October 2026**; do not c
 | Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
 | ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
-| AI Anytime Awesome MCP Servers | [#313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) — review pending |
 | Brethof AI Awesome MCP Servers | [#53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) — review pending |
 | Docker MCP Registry | [#6062](https://github.com/docker/mcp-registry/pull/6062) — review pending |
 | ToolHive | [#1781](https://github.com/stacklok/toolhive-catalog/pull/1781) |
