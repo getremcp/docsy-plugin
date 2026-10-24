@@ -33,7 +33,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Seventeen PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
+Eighteen PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -41,6 +41,7 @@ Seventeen PRs below were submitted or checked **open on 24 October 2026**; do no
 | Kilo | [#478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) |
 | ToolSDK | [#1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) |
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
+| Awesome Claude Code Plugins | [#821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) — review pending |
 | Awesome Gemini CLI Extensions | [#96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) — review pending |
 | AlexMili Awesome MCP | [#326](https://github.com/AlexMili/Awesome-MCP/pull/326) — review pending |
 | Ever Works Awesome MCP Servers | [#212](https://github.com/ever-works/awesome-mcp-servers/pull/212) — review pending |
