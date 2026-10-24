@@ -33,7 +33,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Eighteen PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
+Twenty PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -43,6 +43,8 @@ Eighteen PRs below were submitted or checked **open on 24 October 2026**; do not
 | mcpHQ | [#397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) |
 | Awesome Claude Code Plugins | [#821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) — review pending |
 | Awesome Gemini CLI Extensions | [#96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) — review pending |
+| Collabnix Awesome MCP Lists | [#264](https://github.com/collabnix/awesome-mcp-lists/pull/264) — review pending |
+| mctrinh Awesome MCP Servers | [#179](https://github.com/mctrinh/awesome-mcp-servers/pull/179) — review pending |
 | AlexMili Awesome MCP | [#326](https://github.com/AlexMili/Awesome-MCP/pull/326) — review pending |
 | Ever Works Awesome MCP Servers | [#212](https://github.com/ever-works/awesome-mcp-servers/pull/212) — review pending |
 | Awesome DevOps MCP Servers | [#382](https://github.com/rohitg00/awesome-devops-mcp-servers/pull/382) — review pending |

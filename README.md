@@ -157,6 +157,8 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | [SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
 | [Awesome Claude Code Plugins](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | [Docsy PR #821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | Submitted 24 Oct 2026; awaiting third-party review |
 | [Awesome Gemini CLI Extensions](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | [Docsy PR #96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | Submitted 24 Oct 2026; awaiting upstream review |
+| [Collabnix Awesome MCP Lists](https://github.com/collabnix/awesome-mcp-lists/pull/264) | [Docsy PR #264](https://github.com/collabnix/awesome-mcp-lists/pull/264) | Submitted 24 Oct 2026; external review pending |
+| [mctrinh Awesome MCP Servers](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | [Docsy PR #179](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | Submitted 24 Oct 2026; external review pending |
 | [AlexMili Awesome MCP](https://github.com/AlexMili/Awesome-MCP/pull/326) | [Docsy PR #326](https://github.com/AlexMili/Awesome-MCP/pull/326) | Submitted 24 Oct 2026; awaiting upstream review |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
