@@ -174,7 +174,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | CheckMCP | [Free submission](https://checkmcp.dev/submit) | Free audit queued 24 Oct 2026; not audited/verified yet |
 | ProMCP | [Free submission](https://www.promcpservers.com/submit) | Submitted for manual review 24 Oct 2026 |
 | MCPfinder | [Free submission](https://www.mcpfinder.org/submit) | Submitted successfully 24 Oct 2026; reliability review pending |
-| Launch MCP | [Submission dashboard](https://launchmcp.co/dashboard) | **Submitted from publisher account** 24 Oct 2026; 3/3 community upvotes and website badge verified; **under editorial review**, not yet publicly listed |
+| Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | **Publicly indexed 24 Oct 2026**; 3/3 upvotes and site verification accepted. Publisher page still reports missing structured MCP install/tools metadata; completeness is not yet verified |
 | Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Submitted through authenticated Google session; automated security scan in progress, **not publicly visible yet** |
 | AIBase MCP | [Publisher submission manager](https://aibase.com/user/submitManage?tab=mcp) | Submitted from Google account with official logo and OAuth Streamable HTTP config; **pending review** |
 | ClaudePluginHub (independent) | [Plugin and marketplace submission](https://www.claudepluginhub.com/tools/submit-plugin) | **Both plugin and marketplace submitted** from authenticated publisher account 24 Oct 2026; indexed only after automated validation, **not official Anthropic approval** |
