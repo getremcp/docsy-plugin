@@ -106,6 +106,22 @@ These public distribution records were verified on 24 October 2026:
 
 Older discovery records under `io.github.antonbaider/docsy` may remain indexed; **use the organization namespace** `io.github.getremcp/docsy` for new installations. Avoid claiming a directory's verification, account ownership, or official marketplace approval until independently confirmed.
 
+### Other marketplace submissions awaiting review
+
+The following entries are **submitted, not yet approved**; they are not official marketplace endorsement:
+
+| Marketplace | Submission | Status checked 24 Oct 2026 |
+| --- | --- | --- |
+| Cline Marketplace | [PR #332](https://github.com/cline/marketplace/pull/332) | Open; maintainer review required |
+| Kilo Marketplace | [PR #478](https://github.com/Kilo-Org/kilo-marketplace/pull/478) | Open; code review and security checks passed |
+| ToolSDK MCP Registry | [PR #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) | Open; schema and Biome checks passed |
+| mcpHQ Awesome MCP Servers | [PR #397](https://github.com/mcpHQ/awesome-mcp-servers/pull/397) | Open; awaiting maintainer review |
+| MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
+| MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
+| MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
+
+These are independent community sites; listing policies and review decisions are controlled by their maintainers.
+
 ## Releases and packages
 
 | Channel | Distribution |
