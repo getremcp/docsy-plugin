@@ -58,6 +58,37 @@ Docsy retrieves current and version-specific developer documentation for librari
 
 **Five read-only MCP tools:** `resolve-library-id`, `list-library-versions`, `query-docs`, `search` and `fetch`.
 
+## Tools
+
+Docsy exposes **five read-only MCP tools**, giving AI coding assistants version-specific public documentation with verifiable source URLs.
+
+| MCP tool | Description |
+| --- | --- |
+| `resolve-library-id` | Resolve a library, package, framework or SDK name to its canonical Docsy library ID. |
+| `list-library-versions` | List versions of a library and distinguish indexed content from upstream-only tags. |
+| `query-docs` | Retrieve focused version-aware documentation excerpts and code examples with source links. |
+| `search` | Search publicly indexed documentation and return relevant results, publisher URLs and stable IDs. |
+| `fetch` | Read an indexed result by stable ID or a verified publisher page associated with the selected library/version. |
+
+### `resolve-library-id`
+Resolve a library name to its canonical Docsy ID when an exact library ID is unknown.
+
+### `list-library-versions`
+Discover release versions for a resolved library. Upstream-only tags do not necessarily have indexed documentation.
+
+### `query-docs`
+Ask a focused question about one resolved library and optionally a pinned version, returning verifiable publisher source links. A link-only response is supported.
+
+### `search`
+Search across public indexed documentation; follow a result's stable ID with `fetch` to retrieve a specific source.
+
+### `fetch`
+Fetch a specific indexed result by ID or a verified authorized publisher document page; arbitrary web fetching and private repository access are not supported.
+
+The canonical remote Streamable HTTP endpoint is `https://docsy.remcp.site/mcp/registry`. OAuth 2.1 account authorization is required. All five tools are read-only; they cannot modify local files or run commands.
+
+
+
 ## Connect
 
 **Canonical remote MCP endpoint:** `https://docsy.remcp.site/mcp/registry`
