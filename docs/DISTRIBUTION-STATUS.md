@@ -1,6 +1,6 @@
 # Docsy public distribution status
 
-Checked **24 October 2026**. A submitted directory listing is **not** an approved marketplace installation.
+Checked **25 October 2026**. A submitted directory listing is **not** an approved marketplace installation.
 
 ## Connect directly
 
@@ -18,6 +18,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
 | AI Anytime Awesome MCP Servers | [Merged PR #313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Published in GitHub catalog on 24 Oct 2026 |
+| TensorBlock MCP Index | [Merged PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Accepted 25 Oct 2026; API index propagation tracked separately |
 | Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Public page verified 24 Oct 2026; Add to Cursor uses the canonical OAuth MCP endpoint |
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
 | Sagargupta Awesome MCP Servers | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | PR merged 24 Oct 2026; included in the GitHub catalog |
@@ -61,7 +62,7 @@ Nineteen PRs below remained **open when checked on 25 October 2026**; do not cre
 | ToolHive | [#1781](https://github.com/stacklok/toolhive-catalog/pull/1781) |
 | best-of-mcp-servers | [#561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) |
 | MobinX | [#926](https://github.com/MobinX/awesome-mcp-list/pull/926) |
-| TensorBlock | [#4485 (draft)](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) |
+| VoltAgent Official MCP Servers | [#55](https://github.com/VoltAgent/official-mcp-servers/pull/55) — review pending |
 
 ## Other submitted channels (not independently approved)
 
