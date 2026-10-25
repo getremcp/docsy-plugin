@@ -218,6 +218,10 @@ The following entries are **submitted, not yet approved**; they are not official
 | DhanushNehru Awesome MCP Servers | [PR #127](https://github.com/DhanushNehru/awesome-mcp-servers/pull/127) | Submitted 25 Oct 2026; awaiting external curator review |
 | Awesome Productivity MCP Servers | [PR #47](https://github.com/ExMapo/awesome-productivity-mcp-servers/pull/47) | Submitted 25 Oct 2026; awaiting external curator review |
 | WunderCorp Awesome MCP | [PR #154](https://github.com/wundercorp/awesome-mcp/pull/154) | Submitted 25 Oct 2026; awaiting external curator review |
+| Awesome Codex | [PR #31](https://github.com/ichangyou/awesome-codex/pull/31) | Submitted 25 Oct 2026; awaiting independent review |
+| Awesome AI Coding Tools | [PR #7](https://github.com/mahmoudsajjadi/awesome-ai-coding-tools/pull/7) | Submitted 25 Oct 2026; awaiting independent review |
+| Awesome MCP Collection | [PR #72](https://github.com/JustInCache/awesome-mcp-collection/pull/72) | Submitted 25 Oct 2026; awaiting independent review |
+| TrackMCP | [Submission portal](https://trackmcp.com/submit-mcp) | Repo already submitted (duplicate receipt 25 Oct 2026); public listing not verified |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
