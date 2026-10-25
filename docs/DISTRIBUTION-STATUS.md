@@ -10,13 +10,14 @@ Checked **25 October 2026**. A submitted directory listing is **not** an approve
 - [SDK & CLI repository](https://github.com/getremcp/docsy)
 - [Getting started](GETTING-STARTED.md) · [AI client integrations](CLIENT-INTEGRATIONS.md)
 
-The MCP endpoint intentionally returns **401** without authorization. Production `/readyz` returned **200** on 24 October 2026.
+The canonical MCP endpoint returns **HTTP 401** without OAuth; /readyz returned **HTTP 200** on 25 Oct 2026. Official Registry and release checks confirmed active Docsy v1.0.9 matching the stable plugin-v1.0.9 GitHub release. The previously active io.github.antonbaider/docsy v1.0.5 entry was deprecated with the authenticated publisher CLI. It advertised the obsolete /mcp path rather than the canonical /mcp/registry endpoint.
 
 ## Public listings and packages
 
 | Channel | Public link | Status |
 | --- | --- | --- |
 | Official MCP Registry | [Docsy](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | Published v1.0.9 |
+| Official MCP Registry - deprecated legacy identity | [io.github.antonbaider/docsy v1.0.5](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.antonbaider%2Fdocsy/versions/1.0.5) | **Deprecated 25 Oct 2026**, with migration guidance to active io.github.getremcp/docsy and /mcp/registry; retained for historical discovery |
 | AI Anytime Awesome MCP Servers | [Merged PR #313](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Published in GitHub catalog on 24 Oct 2026 |
 | TensorBlock MCP Index | [Merged PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Accepted 25 Oct 2026; API index propagation tracked separately |
 | Cursor Directory | [Docsy plugin](https://cursor.directory/plugins/docsy) | Public page verified 24 Oct 2026; Add to Cursor uses the canonical OAuth MCP endpoint |
