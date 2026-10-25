@@ -221,6 +221,8 @@ The following entries are **submitted, not yet approved**; they are not official
 | Awesome Codex | [PR #31](https://github.com/ichangyou/awesome-codex/pull/31) | Submitted 25 Oct 2026; awaiting independent review |
 | Awesome AI Coding Tools | [PR #7](https://github.com/mahmoudsajjadi/awesome-ai-coding-tools/pull/7) | Submitted 25 Oct 2026; awaiting independent review |
 | Awesome MCP Collection | [PR #72](https://github.com/JustInCache/awesome-mcp-collection/pull/72) | Submitted 25 Oct 2026; awaiting independent review |
+| Albertchamberlain Awesome-MCP | [PR #116](https://github.com/Albertchamberlain/Awesome-MCP/pull/116) | Submitted 25 Oct 2026; independent review pending, not published |
+| Epistates Awesome MCP DevTools | [PR #23](https://github.com/Epistates/awesome-mcp-devtools/pull/23) | Submitted 25 Oct 2026; independent review pending, not published |
 | TrackMCP | [Submission portal](https://trackmcp.com/submit-mcp) | Repo already submitted (duplicate receipt 25 Oct 2026); public listing not verified |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
