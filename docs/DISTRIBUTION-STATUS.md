@@ -63,13 +63,13 @@ Nineteen PRs below remained **open when checked on 25 October 2026**; do not cre
 
 ## Other submitted channels (not independently approved)
 
-[MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) accepted the Docsy GitHub repo for indexing on 24 Oct 2026: `valid: true`, `status: queued`, `duplicate: false`. The generated permalink currently returns HTTP 404, so this is **not** a verified published listing.
+[MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) accepted the Docsy GitHub repo for indexing on 24 Oct 2026: `valid: true`, `status: queued`, `duplicate: false`. The generated permalink responded HTTP 200 on 25 October 2026 after HTTP 404 on 24 October. The listing title and linked repository have not yet been independently verified; do not move to published based only on HTTP status.
 
 Also confirmed: [MCP.Directory](https://mcp.directory/submit) returned HTTP 409 for the Docsy GitHub URL on 24 October 2026, reporting that the repository had already been submitted and is awaiting review. No duplicate submission was made.
 
 Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
 
-[Plug and Ship](https://plugandship.dev/p/docsy-mcp) is scheduled for **11 November 2026**, not launched. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
+[Plug and Ship](https://plugandship.dev/p/docsy-mcp) has an accessible public listing page. Its free daily-board launch is scheduled for **12 November 2026** according to the submission confirmation. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
 
 [FindMCP](https://findmcp.app/submit) accepted the Docsy MCP submission via API on 25 Oct 2026, returning `{ "success": true, "message": "Submission received for review", "data": { "id": 320, "slug": "docsy" } }`. This is a review-queue acknowledgment, not confirmation of public publication.
 
@@ -77,9 +77,9 @@ Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit)
 
 [AgenticSkills](https://agenticskills.io/submit?type=mcp) confirmed `MCP Server Submitted!` for Docsy on 25 October 2026. Free submission is in a weekly review queue; no public entry has yet been verified.
 
-[MCP Harbor](https://mcpharbor.app/submit/) confirmed receipt of the free Docsy GitHub submission on 24 October 2026. The review and daily indexing are still pending; this is not yet a verified public listing.
+[MCP Harbor](https://mcpharbor.app/submit/) confirmed receipt of a free Docsy GitHub submission on 24 October 2026 and returned the submission acknowledgment again on 25 October 2026. The review and daily indexing are still pending; this is not yet a verified public listing.
 
-The Plug and Ship submission was confirmed again on 24 October with a free launch date of **12 November 2026**, while this document previously recorded **11 November 2026**. The discrepancy is not resolved by the public listing page; verify the actual scheduled launch using the publisher confirmation before asserting one definitive date. The [public Docsy page](https://plugandship.dev/p/docsy-mcp) is accessible independently of the scheduled daily launch.
+The publisher confirmation page directly displayed the free-queue date **12 November 2026** for Docsy on 24 October 2026. The earlier 11 November date was superseded. The [public Docsy page](https://plugandship.dev/p/docsy-mcp) is already accessible independently of the daily-board launch.
 
 ## Smithery sunset — 31 October 2026
 

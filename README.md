@@ -22,7 +22,7 @@
   <a href="https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0"><img alt="Gemini CLI extension v1.0.0" src="https://img.shields.io/badge/Gemini%20CLI-extension%201.0.0-1f2328?style=flat-square"></a>
   <a href="https://docsy.remcp.site/docs"><img alt="Five read-only MCP tools" src="https://img.shields.io/badge/MCP%20tools-5%20read--only-1f2328?style=flat-square"></a>
   <a href="https://mcpub.dev"><img alt="mcpub registered" src="https://img.shields.io/badge/mcpub-registered-1f2328?style=flat-square"></a>
-  <a href="https://plugandship.dev/p/docsy-mcp"><img alt="Plug and Ship launch scheduled November 11" src="https://img.shields.io/badge/Plug%20%26%20Ship-scheduled%20Nov%2011-1f2328?style=flat-square"></a>
+  <a href="https://plugandship.dev/p/docsy-mcp"><img alt="Plug and Ship free launch scheduled November 12" src="https://img.shields.io/badge/Plug%20%26%20Ship-scheduled%20Nov%2012-1f2328?style=flat-square"></a>
   <a href="https://www.npmjs.com/package/@remcp/docsy-sdk"><img alt="npm SDK version" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-sdk?style=flat-square&label=npm%20SDK"></a>
   <a href="https://www.npmjs.com/package/@remcp/docsy-cli"><img alt="npm CLI version" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-cli?style=flat-square&label=npm%20CLI"></a>
 </p>
@@ -165,7 +165,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [Few Servers](https://www.fewservers.com/mcp/submit/) | Editorial listing/claim request sent 25 Oct 2026 by email | Awaiting independent human review; not a verified listing |
 | [AgenticSkills](https://agenticskills.io/submit?type=mcp) | Free Docsy MCP server submission | Accepted on 25 Oct 2026; weekly editorial review pending, not published |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
-| [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
+| [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Public detail page accessible; free daily-board launch scheduled 12 Nov 2026 |
 | [Claude Code community marketplace](.claude-plugin/marketplace.json) | `claude plugin marketplace add getremcp/docsy-plugin` | GitHub-installable, not official Anthropic marketplace approval |
 | [Gemini CLI extension](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | Tagged extension manifest in the [SDK & CLI repository](https://github.com/getremcp/docsy) | GitHub release, not gallery approval |
 | [ChatGPT, Codex, Cursor and others](docs/CLIENT-INTEGRATIONS.md) | Direct OAuth 2.1 remote MCP connection | Client integration guide, not official marketplace approval |
