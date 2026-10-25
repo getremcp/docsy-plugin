@@ -174,7 +174,7 @@ These public distribution records were verified on 25 October 2026. See the [ful
 | [Gemini CLI extension](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | Tagged extension manifest in the [SDK & CLI repository](https://github.com/getremcp/docsy) | GitHub release, not gallery approval |
 | [ChatGPT, Codex, Cursor and others](docs/CLIENT-INTEGRATIONS.md) | Direct OAuth 2.1 remote MCP connection | Client integration guide, not official marketplace approval |
 
-Older discovery records under `io.github.antonbaider/docsy` may remain indexed; **use the organization namespace** `io.github.getremcp/docsy` for new installations. Glama publisher ownership was confirmed by the Glama administration UI on 24 Oct 2026; its live badge reports current independent health and quality checks. Other directories and official marketplaces remain subject to their own reviews.
+The former Registry identity [io.github.antonbaider/docsy v1.0.5](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.antonbaider%2Fdocsy/versions/1.0.5) was explicitly marked **deprecated on 25 October 2026**, with migration guidance to [io.github.getremcp/docsy v1.0.9](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.getremcp%2Fdocsy/versions/latest), which remains **active**. Older directories may display the deprecated record; use the organization identity for new installations. Glama publisher ownership was confirmed by the Glama administration UI on 24 Oct 2026; its live badge reports current independent health and quality checks. Other directories and official marketplaces remain subject to their own reviews.
 
 <details>
 <summary><strong>Directory submissions awaiting independent review · expand status table</strong></summary>
