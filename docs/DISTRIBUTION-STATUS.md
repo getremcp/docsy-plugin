@@ -39,7 +39,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Twenty-four PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
+Twenty-eight PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -68,6 +68,10 @@ Twenty-four PRs below were submitted and remained **open when checked on 25 Octo
 | PenguinMiaou Awesome Claude Code Plugins | [#10](https://github.com/PenguinMiaou/awesome-claude-code-plugins/pull/10) — review pending |
 | itgoyo Awesome Claude Code | [#19](https://github.com/itgoyo/awesome-claude-code/pull/19) — review pending |
 | Claude Plugins Radar | [#3](https://github.com/iliasabk/claude-plugins-radar/pull/3) — review pending |
+| Habito Awesome MCP Servers | [#297](https://github.com/habitoai/awesome-mcp-servers/pull/297) — review pending |
+| DhanushNehru Awesome MCP Servers | [#127](https://github.com/DhanushNehru/awesome-mcp-servers/pull/127) — review pending |
+| Awesome Productivity MCP Servers | [#47](https://github.com/ExMapo/awesome-productivity-mcp-servers/pull/47) — review pending |
+| WunderCorp Awesome MCP | [#154](https://github.com/wundercorp/awesome-mcp/pull/154) — review pending |
 
 ## Other submitted channels (not independently approved)
 
