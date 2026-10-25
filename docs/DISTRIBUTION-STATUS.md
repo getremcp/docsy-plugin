@@ -39,7 +39,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Thirty-five PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
+Thirty-seven PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -79,6 +79,8 @@ Thirty-five PRs below were submitted and remained **open when checked on 25 Octo
 | Epistates Awesome MCP DevTools | [#23](https://github.com/Epistates/awesome-mcp-devtools/pull/23) — review pending |
 | awesome-mcp.tools (adw0rd) | [#187](https://github.com/adw0rd/awesome-mcp-servers/pull/187) — review pending |
 | Backblaze Awesome Agent Infrastructure | [#43](https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/43) — review pending |
+| Awesome AI DevTools RU | [#3](https://github.com/justxor/awesome-ai-devtools-ru/pull/3) — review pending |
+| Awesome Agentic Engineering | [#26](https://github.com/ashishkaloge/awesome-agentic-engineering/pull/26) — review pending |
 
 ## Other submitted channels (not independently approved)
 
