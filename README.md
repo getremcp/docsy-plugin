@@ -214,6 +214,10 @@ The following entries are **submitted, not yet approved**; they are not official
 | itgoyo Awesome Claude Code | [PR #19](https://github.com/itgoyo/awesome-claude-code/pull/19) | Submitted 25 Oct 2026; community review pending, not Anthropic endorsement |
 | Claude Plugins Radar | [PR #3](https://github.com/iliasabk/claude-plugins-radar/pull/3) | Submitted 25 Oct 2026; community review pending, not Anthropic endorsement |
 | ClaudeMods | [Editorial issue #34](https://github.com/omarcevi/claudemods/issues/34) | MCP listing requested 25 Oct 2026; awaiting bot/editor review |
+| Habito Awesome MCP Servers | [PR #297](https://github.com/habitoai/awesome-mcp-servers/pull/297) | Submitted 25 Oct 2026; awaiting external curator review |
+| DhanushNehru Awesome MCP Servers | [PR #127](https://github.com/DhanushNehru/awesome-mcp-servers/pull/127) | Submitted 25 Oct 2026; awaiting external curator review |
+| Awesome Productivity MCP Servers | [PR #47](https://github.com/ExMapo/awesome-productivity-mcp-servers/pull/47) | Submitted 25 Oct 2026; awaiting external curator review |
+| WunderCorp Awesome MCP | [PR #154](https://github.com/wundercorp/awesome-mcp/pull/154) | Submitted 25 Oct 2026; awaiting external curator review |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
