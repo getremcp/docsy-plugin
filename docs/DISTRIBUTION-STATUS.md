@@ -26,6 +26,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
 | MCPRepository | [Docsy public listing](https://mcprepository.com/getremcp/docsy-plugin) | Verified public 25 Oct 2026: HTTP 200, title `Docsy MCP Plugin - MCP Server`, source `getremcp/docsy-plugin` |
 | LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
+| Ext Ops Panel | [Docsy MCP profile](https://extops.dev/plugins/mcp/io.github.getremcp/docsy) | Public indexed page verified 25 Oct 2026 with Docsy title and official registry identity; independent discovery, not endorsement |
 | Walnut World | [Docsy plugin](https://walnut.world/w/docsy-plugin) · [Docsy SDK/CLI](https://walnut.world/w/docsy) | Both published 25 Oct 2026, pages indexed from `getremcp`; publisher ownership unclaimed |
 | GitHub | [Plugin stable v1.0.9](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9) | Stable release |
 | GitHub | [Plugin prerelease v1.0.10](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.10) | Review candidate, not official approval |
