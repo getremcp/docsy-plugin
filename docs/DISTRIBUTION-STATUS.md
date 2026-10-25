@@ -39,7 +39,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Nineteen PRs below remained **open when checked on 25 October 2026**; do not create duplicate PRs.
+Twenty-one PRs below remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -63,6 +63,8 @@ Nineteen PRs below remained **open when checked on 25 October 2026**; do not cre
 | best-of-mcp-servers | [#561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) |
 | MobinX | [#926](https://github.com/MobinX/awesome-mcp-list/pull/926) |
 | VoltAgent Official MCP Servers | [#55](https://github.com/VoltAgent/official-mcp-servers/pull/55) — review pending |
+| Awesome Public MCP Servers | [#83](https://github.com/bhavyshekhaliya/awesome-public-mcp-servers/pull/83) — review pending |
+| Awesome MCP Tools | [#20](https://github.com/Christian-Sidak/awesome-mcp-tools/pull/20) — review pending |
 
 ## Other submitted channels (not independently approved)
 
