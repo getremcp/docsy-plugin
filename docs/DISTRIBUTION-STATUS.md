@@ -24,6 +24,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | Awesome Remote MCP Servers | [Docsy entry](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Public listing; confirmed from upstream GitHub README 24 Oct 2026 |
 | mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
+| MCPRepository | [Docsy public listing](https://mcprepository.com/getremcp/docsy-plugin) | Verified public 25 Oct 2026: HTTP 200, title `Docsy MCP Plugin - MCP Server`, source `getremcp/docsy-plugin` |
 | LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
 | Walnut World | [Docsy plugin](https://walnut.world/w/docsy-plugin) · [Docsy SDK/CLI](https://walnut.world/w/docsy) | Both published 25 Oct 2026, pages indexed from `getremcp`; publisher ownership unclaimed |
 | GitHub | [Plugin stable v1.0.9](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9) | Stable release |
@@ -63,11 +64,13 @@ Nineteen PRs below remained **open when checked on 25 October 2026**; do not cre
 
 ## Other submitted channels (not independently approved)
 
-[MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) accepted the Docsy GitHub repo for indexing on 24 Oct 2026: `valid: true`, `status: queued`, `duplicate: false`. The generated permalink responded HTTP 200 on 25 October 2026 after HTTP 404 on 24 October. The listing title and linked repository have not yet been independently verified; do not move to published based only on HTTP status.
+MCPRepository accepted Docsy for indexing on 24 Oct and completed publication by 25 Oct. The [public Docsy listing](https://mcprepository.com/getremcp/docsy-plugin) was verified with HTTP 200, the exact title and the linked `getremcp/docsy-plugin` repository. Listed above as published.
 
 Also confirmed: [MCP.Directory](https://mcp.directory/submit) returned HTTP 409 for the Docsy GitHub URL on 24 October 2026, reporting that the repository had already been submitted and is awaiting review. No duplicate submission was made.
 
 Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit), [ProMCP](https://www.promcpservers.com/submit), [MCPfinder](https://www.mcpfinder.org/submit), [AIBase](https://aibase.com/user/submitManage?tab=mcp), [ClaudePluginHub](https://www.claudepluginhub.com/tools/submit-plugin), [MCP Index](https://themcpindex.com/submit), [MCP Market](https://mcpmarket.com/submit), [MCP Servers](https://mcpservers.org/submit), and [GitHub VS Code/Copilot onboarding](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953).
+
+[MCPizy](https://mcpizy.com/submit/thanks?ref=web_mvnk6me0_a8jruk&tier=standard) acknowledged Docsy submission on 25 Oct 2026 (ID `web_mvnk6me0_a8jruk`) in its free review queue; it is not yet verified publicly.
 
 [Plug and Ship](https://plugandship.dev/p/docsy-mcp) has an accessible public listing page. Its free daily-board launch is scheduled for **12 November 2026** according to the submission confirmation. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
 

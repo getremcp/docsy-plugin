@@ -154,6 +154,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [Awesome Remote MCP Servers](https://github.com/punkpeye/awesome-remote-mcp-servers) | [Docsy in curated remote-server list](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Already publicly listed with canonical OAuth endpoint and Glama badge |
 | [mcpub](https://mcpub.dev) | `https://docsy.remcp.site/mcp/registry` | Registered 24 Oct 2026; listed in discovery |
 | [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | Public page returned HTTP 200 on 24 Oct 2026 |
+| [MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) | [Public Docsy MCP source listing](https://mcprepository.com/getremcp/docsy-plugin) | Public title and GitHub repository verified 25 Oct 2026 |
 | [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | [SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
 | [Walnut World](https://walnut.world/w/docsy-plugin) | [Plugin](https://walnut.world/w/docsy-plugin) · [SDK & CLI](https://walnut.world/w/docsy) | Both GitHub-source pages indexed and publicly visible on 25 Oct 2026; publisher ownership not yet claimed |
 | [Awesome Claude Code Plugins](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | [Docsy PR #821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | Submitted 24 Oct 2026; awaiting third-party review |
@@ -165,6 +166,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [Few Servers](https://www.fewservers.com/mcp/submit/) | Editorial listing/claim request sent 25 Oct 2026 by email | Awaiting independent human review; not a verified listing |
 | [AgenticSkills](https://agenticskills.io/submit?type=mcp) | Free Docsy MCP server submission | Accepted on 25 Oct 2026; weekly editorial review pending, not published |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
+| [MCPizy](https://mcpizy.com/submit/thanks?ref=web_mvnk6me0_a8jruk&tier=standard) | Free Docsy submission ID `web_mvnk6me0_a8jruk` | Accepted 25 Oct 2026; pending external review |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Public detail page accessible; free daily-board launch scheduled 12 Nov 2026 |
 | [Claude Code community marketplace](.claude-plugin/marketplace.json) | `claude plugin marketplace add getremcp/docsy-plugin` | GitHub-installable, not official Anthropic marketplace approval |
 | [Gemini CLI extension](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | Tagged extension manifest in the [SDK & CLI repository](https://github.com/getremcp/docsy) | GitHub release, not gallery approval |
@@ -191,7 +193,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | YuzeHao Awesome MCP Servers | [PR #718](https://github.com/YuzeHao2023/Awesome-MCP-Servers/pull/718) | Submitted 24 Oct 2026; pending upstream review |
 | Awesome Remote MCP Servers (jaw9c) | [PR #1636](https://github.com/jaw9c/awesome-remote-mcp-servers/pull/1636) | Submitted 24 Oct 2026; hosted OAuth listing pending review |
 | Brethof AI Awesome MCP Servers | [PR #53](https://github.com/BrethofAI/awesome-mcp-servers/pull/53) | Submitted 24 Oct 2026; hosted OAuth details documented; awaiting review |
-| MCPRepository | [Submission status](https://mcprepository.com/getremcp/docsy-plugin) | Indexing queued 24 Oct 2026; permalink still HTTP 404; not published |
+
 | Docker MCP Registry | [PR #6062](https://github.com/docker/mcp-registry/pull/6062) | Submitted 24 Oct 2026; pending Docker manual review and OAuth integration validation |
 | ToolHive Catalog | [PR #1781](https://github.com/stacklok/toolhive-catalog/pull/1781) | Submitted; catalog review required |
 | best-of-mcp-servers | [PR #561](https://github.com/tolkonepiu/best-of-mcp-servers/pull/561) | Submitted; YAML validation passed; review required |
