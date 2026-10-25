@@ -39,7 +39,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Twenty-eight PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
+Thirty-one PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -72,8 +72,13 @@ Twenty-eight PRs below were submitted and remained **open when checked on 25 Oct
 | DhanushNehru Awesome MCP Servers | [#127](https://github.com/DhanushNehru/awesome-mcp-servers/pull/127) — review pending |
 | Awesome Productivity MCP Servers | [#47](https://github.com/ExMapo/awesome-productivity-mcp-servers/pull/47) — review pending |
 | WunderCorp Awesome MCP | [#154](https://github.com/wundercorp/awesome-mcp/pull/154) — review pending |
+| Awesome Codex | [#31](https://github.com/ichangyou/awesome-codex/pull/31) — review pending |
+| Awesome AI Coding Tools | [#7](https://github.com/mahmoudsajjadi/awesome-ai-coding-tools/pull/7) — review pending |
+| Awesome MCP Collection | [#72](https://github.com/JustInCache/awesome-mcp-collection/pull/72) — review pending |
 
 ## Other submitted channels (not independently approved)
+
+[TrackMCP](https://trackmcp.com/submit-mcp) returned "This tool has already been submitted" on 25 October 2026 for the canonical Docsy public repository; no fresh submission and no public listing verified.
 
 [ClaudeMods editorial submission #34](https://github.com/omarcevi/claudemods/issues/34) was filed on 25 October 2026 for Docsy; its review/bot-generated catalog PR is not yet confirmed.
 
