@@ -225,6 +225,8 @@ The following entries are **submitted, not yet approved**; they are not official
 | Epistates Awesome MCP DevTools | [PR #23](https://github.com/Epistates/awesome-mcp-devtools/pull/23) | Submitted 25 Oct 2026; independent review pending, not published |
 | awesome-mcp.tools (adw0rd) | [PR #187](https://github.com/adw0rd/awesome-mcp-servers/pull/187) | Submitted 25 Oct 2026; external review pending, not a published listing |
 | Backblaze Awesome Agent Infrastructure | [PR #43](https://github.com/backblaze-labs/awesome-agent-infrastructure/pull/43) | Submitted 25 Oct 2026; external review pending, not a published listing |
+| Awesome AI DevTools RU | [PR #3](https://github.com/justxor/awesome-ai-devtools-ru/pull/3) | Submitted 25 Oct 2026; external review pending, not a published listing |
+| Awesome Agentic Engineering | [PR #26](https://github.com/ashishkaloge/awesome-agentic-engineering/pull/26) | Submitted 25 Oct 2026; external review pending, not a published listing |
 | TrackMCP | [Submission portal](https://trackmcp.com/submit-mcp) | Repo already submitted (duplicate receipt 25 Oct 2026); public listing not verified |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
