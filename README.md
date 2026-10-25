@@ -142,12 +142,13 @@ For additional clients, see the **[Full setup guide: connecting Docsy to your AI
 
 ## Discover Docsy
 
-These public distribution records were verified on 24 October 2026. See the [full distribution matrix](docs/DISTRIBUTION-STATUS.md) for directory links, pending reviews and Smithery migration:
+These public distribution records were verified on 25 October 2026. See the [full distribution matrix](docs/DISTRIBUTION-STATUS.md) for directory links, pending reviews and Smithery migration:
 
 | Channel | Record | Status |
 | --- | --- | --- |
 | [Official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.getremcp%2Fdocsy) | `io.github.getremcp/docsy`, v1.0.9 | Published / active |
 | [AI Anytime Awesome MCP Servers](https://github.com/AIAnytime/Awesome-MCP-Servers) | [Docsy PR #313 merged](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Published 24 Oct 2026; hosted OAuth MCP entry in public directory |
+| [TensorBlock MCP Index](https://github.com/TensorBlock/awesome-mcp-servers) | [Merged Docsy PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Accepted into upstream catalog 25 Oct 2026; public index sync may lag |
 | [Cursor Directory](https://cursor.directory/plugins/docsy) | Public Docsy plugin page with **Add to Cursor** and canonical OAuth endpoint | Publicly accessible, verified in Chrome on 24 Oct 2026; not an official Cursor endorsement |
 | [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Remote connector exposing five tools | Listed and publisher-claimed (24 Oct 2026); DNS ownership and OAuth test confirmed |
 | [Sagargupta Awesome MCP Servers](https://github.com/Sagargupta16/awesome-mcp-servers) | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | Published in GitHub catalog 24 Oct 2026; external site sync may lag |
@@ -206,7 +207,7 @@ The following entries are **submitted, not yet approved**; they are not official
 | AIBase MCP | [Publisher submission manager](https://aibase.com/user/submitManage?tab=mcp) | Submitted from Google account with official logo and OAuth Streamable HTTP config; **pending review** |
 | ClaudePluginHub (independent) | [Plugin and marketplace submission](https://www.claudepluginhub.com/tools/submit-plugin) | **Both plugin and marketplace submitted** from authenticated publisher account 24 Oct 2026; indexed only after automated validation, **not official Anthropic approval** |
 | GitHub MCP Registry (VS Code / Copilot) | [Onboarding request](https://github.com/github/github-mcp-server/discussions/1257#discussioncomment-19165953) | Official registry identity, tools, OAuth, docs and license provided; **manual curation pending** |
-| TensorBlock awesome-mcp-servers | [PR #4485](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Automatically proposed by TensorBlock; **review pending**, do not duplicate |
+| VoltAgent Official MCP Servers | [PR #55](https://github.com/VoltAgent/official-mcp-servers/pull/55) | Submitted 25 Oct 2026; awaiting curator review |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
