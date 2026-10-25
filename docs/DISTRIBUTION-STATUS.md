@@ -25,15 +25,18 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 | mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
 | LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
+| Walnut World | [Docsy plugin](https://walnut.world/w/docsy-plugin) · [Docsy SDK/CLI](https://walnut.world/w/docsy) | Both published 25 Oct 2026, pages indexed from `getremcp`; publisher ownership unclaimed |
 | GitHub | [Plugin stable v1.0.9](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.9) | Stable release |
 | GitHub | [Plugin prerelease v1.0.10](https://github.com/getremcp/docsy-plugin/releases/tag/plugin-v1.0.10) | Review candidate, not official approval |
 | npm | [SDK](https://www.npmjs.com/package/@remcp/docsy-sdk) · [CLI](https://www.npmjs.com/package/@remcp/docsy-cli) | Published packages |
 | Claude Code community | [Marketplace manifest](../.claude-plugin/marketplace.json) | GitHub-installable; not official Anthropic approval |
 | Gemini CLI | [Extension release](https://github.com/getremcp/docsy/releases/tag/gemini-v1.0.0) | GitHub release; not official gallery approval |
 
+**Closed review:** [AlexMili Awesome MCP #326](https://github.com/AlexMili/Awesome-MCP/pull/326) closed 24 Oct 2026: the directory requires MCP server source; `docsy-plugin` contains host integration metadata and is not the hosted server implementation. Do not resubmit this plugin as a server source without changing eligibility.
+
 ## GitHub submissions pending third-party review
 
-Twenty PRs below were submitted or checked **open on 24 October 2026**; do not create duplicate PRs.
+Nineteen PRs below remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -45,7 +48,7 @@ Twenty PRs below were submitted or checked **open on 24 October 2026**; do not c
 | Awesome Gemini CLI Extensions | [#96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) — review pending |
 | Collabnix Awesome MCP Lists | [#264](https://github.com/collabnix/awesome-mcp-lists/pull/264) — review pending |
 | mctrinh Awesome MCP Servers | [#179](https://github.com/mctrinh/awesome-mcp-servers/pull/179) — review pending |
-| AlexMili Awesome MCP | [#326](https://github.com/AlexMili/Awesome-MCP/pull/326) — review pending |
+
 | Ever Works Awesome MCP Servers | [#212](https://github.com/ever-works/awesome-mcp-servers/pull/212) — review pending |
 | Awesome DevOps MCP Servers | [#382](https://github.com/rohitg00/awesome-devops-mcp-servers/pull/382) — review pending |
 | MindPal Awesome Remote MCP Servers | [#230](https://github.com/sylviangth/awesome-remote-mcp-servers/pull/230) — review pending |

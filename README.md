@@ -155,11 +155,12 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [mcpub](https://mcpub.dev) | `https://docsy.remcp.site/mcp/registry` | Registered 24 Oct 2026; listed in discovery |
 | [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | Public page returned HTTP 200 on 24 Oct 2026 |
 | [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | [SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
+| [Walnut World](https://walnut.world/w/docsy-plugin) | [Plugin](https://walnut.world/w/docsy-plugin) · [SDK & CLI](https://walnut.world/w/docsy) | Both GitHub-source pages indexed and publicly visible on 25 Oct 2026; publisher ownership not yet claimed |
 | [Awesome Claude Code Plugins](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | [Docsy PR #821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821) | Submitted 24 Oct 2026; awaiting third-party review |
 | [Awesome Gemini CLI Extensions](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | [Docsy PR #96](https://github.com/Piebald-AI/awesome-gemini-cli-extensions/pull/96) | Submitted 24 Oct 2026; awaiting upstream review |
 | [Collabnix Awesome MCP Lists](https://github.com/collabnix/awesome-mcp-lists/pull/264) | [Docsy PR #264](https://github.com/collabnix/awesome-mcp-lists/pull/264) | Submitted 24 Oct 2026; external review pending |
 | [mctrinh Awesome MCP Servers](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | [Docsy PR #179](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | Submitted 24 Oct 2026; external review pending |
-| [AlexMili Awesome MCP](https://github.com/AlexMili/Awesome-MCP/pull/326) | [Docsy PR #326](https://github.com/AlexMili/Awesome-MCP/pull/326) | Submitted 24 Oct 2026; awaiting upstream review |
+| [AlexMili Awesome MCP](https://github.com/AlexMili/Awesome-MCP/pull/326) | [Docsy PR #326](https://github.com/AlexMili/Awesome-MCP/pull/326) | Closed 24 Oct 2026: catalog requires actual MCP server source; plugin bundle does not qualify. Do not resubmit same bundle. |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
 | [Claude Code community marketplace](.claude-plugin/marketplace.json) | `claude plugin marketplace add getremcp/docsy-plugin` | GitHub-installable, not official Anthropic marketplace approval |
