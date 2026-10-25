@@ -161,6 +161,7 @@ These public distribution records were verified on 24 October 2026. See the [ful
 | [Collabnix Awesome MCP Lists](https://github.com/collabnix/awesome-mcp-lists/pull/264) | [Docsy PR #264](https://github.com/collabnix/awesome-mcp-lists/pull/264) | Submitted 24 Oct 2026; external review pending |
 | [mctrinh Awesome MCP Servers](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | [Docsy PR #179](https://github.com/mctrinh/awesome-mcp-servers/pull/179) | Submitted 24 Oct 2026; external review pending |
 | [AlexMili Awesome MCP](https://github.com/AlexMili/Awesome-MCP/pull/326) | [Docsy PR #326](https://github.com/AlexMili/Awesome-MCP/pull/326) | Closed 24 Oct 2026: catalog requires actual MCP server source; plugin bundle does not qualify. Do not resubmit same bundle. |
+| [Few Servers](https://www.fewservers.com/mcp/submit/) | Editorial listing/claim request sent 25 Oct 2026 by email | Awaiting independent human review; not a verified listing |
 | [AgenticSkills](https://agenticskills.io/submit?type=mcp) | Free Docsy MCP server submission | Accepted on 25 Oct 2026; weekly editorial review pending, not published |
 | [MCP Harbor](https://mcpharbor.app/submit/) | Free submission accepted on 24 Oct 2026 | Under external review; no public listing independently verified |
 | [Plug and Ship](https://plugandship.dev/p/docsy-mcp) | Docsy MCP free launch | Scheduled 11 Nov 2026; not yet launched |
