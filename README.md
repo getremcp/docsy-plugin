@@ -210,6 +210,10 @@ The following entries are **submitted, not yet approved**; they are not official
 | VoltAgent Official MCP Servers | [PR #55](https://github.com/VoltAgent/official-mcp-servers/pull/55) | Submitted 25 Oct 2026; awaiting curator review |
 | Awesome Public MCP Servers | [PR #83](https://github.com/bhavyshekhaliya/awesome-public-mcp-servers/pull/83) | Submitted 25 Oct 2026; hosted OAuth docs MCP, review pending |
 | Awesome MCP Tools | [PR #20](https://github.com/Christian-Sidak/awesome-mcp-tools/pull/20) | Submitted 25 Oct 2026; listed as remote documentation tool, review pending |
+| PenguinMiaou Awesome Claude Code Plugins | [PR #10](https://github.com/PenguinMiaou/awesome-claude-code-plugins/pull/10) | Submitted 25 Oct 2026; community review pending, not Anthropic endorsement |
+| itgoyo Awesome Claude Code | [PR #19](https://github.com/itgoyo/awesome-claude-code/pull/19) | Submitted 25 Oct 2026; community review pending, not Anthropic endorsement |
+| Claude Plugins Radar | [PR #3](https://github.com/iliasabk/claude-plugins-radar/pull/3) | Submitted 25 Oct 2026; community review pending, not Anthropic endorsement |
+| ClaudeMods | [Editorial issue #34](https://github.com/omarcevi/claudemods/issues/34) | MCP listing requested 25 Oct 2026; awaiting bot/editor review |
 | MCP Index | [Submission form](https://themcpindex.com/submit) | Received; editorial review pending |
 | MCP Market | [Submission queue](https://mcpmarket.com/submit) | Accepted into free queue |
 | MCP Servers | [Submission queue](https://mcpservers.org/submit) | Accepted for free review |
