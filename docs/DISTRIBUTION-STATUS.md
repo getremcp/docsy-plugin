@@ -71,6 +71,8 @@ Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit)
 
 [Plug and Ship](https://plugandship.dev/p/docsy-mcp) is scheduled for **11 November 2026**, not launched. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
 
+[AgenticSkills](https://agenticskills.io/submit?type=mcp) confirmed `MCP Server Submitted!` for Docsy on 25 October 2026. Free submission is in a weekly review queue; no public entry has yet been verified.
+
 [MCP Harbor](https://mcpharbor.app/submit/) confirmed receipt of the free Docsy GitHub submission on 24 October 2026. The review and daily indexing are still pending; this is not yet a verified public listing.
 
 The Plug and Ship submission was confirmed again on 24 October with a free launch date of **12 November 2026**, while this document previously recorded **11 November 2026**. The discrepancy is not resolved by the public listing page; verify the actual scheduled launch using the publisher confirmation before asserting one definitive date. The [public Docsy page](https://plugandship.dev/p/docsy-mcp) is accessible independently of the scheduled daily launch.
