@@ -71,6 +71,8 @@ Previously submitted on 24 October 2026: [CheckMCP](https://checkmcp.dev/submit)
 
 [Plug and Ship](https://plugandship.dev/p/docsy-mcp) is scheduled for **11 November 2026**, not launched. The [mcpservers.org listing URL](https://mcpservers.org/servers/getremcp/docsy-plugin) appeared in search results, but direct automated verification returned **403** on 24 October 2026, so it is not marked independently verified.
 
+[FindMCP](https://findmcp.app/submit) accepted the Docsy MCP submission via API on 25 Oct 2026, returning `{ "success": true, "message": "Submission received for review", "data": { "id": 320, "slug": "docsy" } }`. This is a review-queue acknowledgment, not confirmation of public publication.
+
 [Few Servers](https://www.fewservers.com/mcp/submit/) returned an email handoff (the form does not store submissions). A separate listing/claim request for Docsy was sent to the address given by the site on 25 October 2026, and Gmail returned a sent-message ID. External review and any claim verification are outstanding; **do not mark this published**.
 
 [AgenticSkills](https://agenticskills.io/submit?type=mcp) confirmed `MCP Server Submitted!` for Docsy on 25 October 2026. Free submission is in a weekly review queue; no public entry has yet been verified.
