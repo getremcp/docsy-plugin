@@ -39,7 +39,7 @@ The MCP endpoint intentionally returns **401** without authorization. Production
 
 ## GitHub submissions pending third-party review
 
-Twenty-one PRs below remained **open when checked on 25 October 2026**; do not create duplicate PRs.
+Twenty-four PRs below were submitted and remained **open when checked on 25 October 2026**; do not create duplicate PRs.
 
 | Channel | Pending PR |
 | --- | --- |
@@ -65,8 +65,13 @@ Twenty-one PRs below remained **open when checked on 25 October 2026**; do not c
 | VoltAgent Official MCP Servers | [#55](https://github.com/VoltAgent/official-mcp-servers/pull/55) — review pending |
 | Awesome Public MCP Servers | [#83](https://github.com/bhavyshekhaliya/awesome-public-mcp-servers/pull/83) — review pending |
 | Awesome MCP Tools | [#20](https://github.com/Christian-Sidak/awesome-mcp-tools/pull/20) — review pending |
+| PenguinMiaou Awesome Claude Code Plugins | [#10](https://github.com/PenguinMiaou/awesome-claude-code-plugins/pull/10) — review pending |
+| itgoyo Awesome Claude Code | [#19](https://github.com/itgoyo/awesome-claude-code/pull/19) — review pending |
+| Claude Plugins Radar | [#3](https://github.com/iliasabk/claude-plugins-radar/pull/3) — review pending |
 
 ## Other submitted channels (not independently approved)
+
+[ClaudeMods editorial submission #34](https://github.com/omarcevi/claudemods/issues/34) was filed on 25 October 2026 for Docsy; its review/bot-generated catalog PR is not yet confirmed.
 
 MCPRepository accepted Docsy for indexing on 24 Oct and completed publication by 25 Oct. The [public Docsy listing](https://mcprepository.com/getremcp/docsy-plugin) was verified with HTTP 200, the exact title and the linked `getremcp/docsy-plugin` repository. Listed above as published.
 
