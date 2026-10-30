@@ -36,6 +36,18 @@ jobs:
             'docs/README.zh-CN.md','docs/ANNOUNCEMENT.zh-CN.md',
             'skills/find-docs/SKILL.md',
           }
+          public_only_sha256={
+            'assets/docsy-marketplace-400.png':
+              '7b0a1992b7ea90cfb26e73bf4d7f1c8e17f08bb3cba7d80691510ffe14197141',
+            'docs/ANNOUNCEMENT.zh-CN.md':
+              '7e242c3977079d1d2a9308415de1ecc9bebc91f35b078308d1a33ee80c629995',
+            'docs/DISTRIBUTION-STATUS.md':
+              'cf16b69135fee22baaa9d7c2dac877b62ad6e669d30b88420b1d2f0bd07c15f1',
+            'docs/README.zh-CN.md':
+              '6e1c9d87d21e456140acc8e6ea0b086556867d206540cdd248ba8f728de18d32',
+          }
+          for filename,digest in public_only_sha256.items():
+            assert hashlib.sha256(pathlib.Path(filename).read_bytes()).hexdigest()==digest, filename
           actual={p.as_posix() for p in root.rglob('*')
                   if p.is_file() and '.git' not in p.parts}
           assert actual==allowed, 'Unapproved public paths: '+str(sorted(actual^allowed))
