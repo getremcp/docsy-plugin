@@ -16,6 +16,7 @@
 <p align="center">
   <a href="https://docsy.remcp.site"><strong>Website</strong></a>
   &nbsp;·&nbsp; <a href="https://docsy.remcp.site/docs">Documentation</a>
+  &nbsp;·&nbsp; <a href="https://github.com/getremcp/docsy"><strong>SDK &amp; CLI source</strong></a>
   &nbsp;·&nbsp; <a href="#quick-start">Quick start</a>
   &nbsp;·&nbsp; <a href="#where-docsy-is-published">Where to find Docsy</a>
   &nbsp;·&nbsp; <a href="docs/README.zh-CN.md">简体中文</a>
@@ -24,12 +25,14 @@
 <p align="center">
   <a href="https://github.com/getremcp/docsy-plugin/actions/workflows/plugin-quality.yml"><img alt="CI checks" src="https://img.shields.io/github/actions/workflow/status/getremcp/docsy-plugin/plugin-quality.yml?branch=main&label=CI%20checks&style=flat-square"></a>
   <a href="https://github.com/getremcp/docsy-plugin/releases/latest"><img alt="Stable plugin release" src="https://img.shields.io/github/v/release/getremcp/docsy-plugin?label=stable%20release&style=flat-square"></a>
+  <a href="https://github.com/getremcp/docsy/actions/workflows/public-packages.yml"><img alt="SDK and CLI CI" src="https://img.shields.io/github/actions/workflow/status/getremcp/docsy/public-packages.yml?branch=main&label=SDK%2FCLI%20CI&style=flat-square"></a>
   <a href="https://github.com/getremcp/docsy-plugin/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/getremcp/docsy-plugin?style=flat-square"></a>
   <a href="https://github.com/getremcp/docsy-plugin/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/getremcp/docsy-plugin?style=flat-square"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/github/license/getremcp/docsy-plugin?style=flat-square"></a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/getremcp/docsy"><img alt="SDK and CLI source repository" src="https://img.shields.io/badge/SDK%20%26%20CLI-source%20repository-1f2328?style=flat-square&logo=github"></a>
   <a href="https://www.npmjs.com/package/@remcp/docsy-sdk"><img alt="npm SDK version" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-sdk?label=SDK%20npm&style=flat-square&logo=npm"></a>
   <a href="https://www.npmjs.com/package/@remcp/docsy-cli"><img alt="npm CLI version" src="https://img.shields.io/npm/v/%40remcp%2Fdocsy-cli?label=CLI%20npm&style=flat-square&logo=npm"></a>
   <a href="https://www.npmjs.com/package/@remcp/docsy-sdk"><img alt="npm SDK downloads in the last month" src="https://img.shields.io/npm/dm/%40remcp%2Fdocsy-sdk?label=SDK%20downloads%2Fmonth&style=flat-square&color=218b62"></a>
@@ -45,6 +48,7 @@
 <p align="center">
   <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ad6814ca7708191956117b3a3b58eb5"><strong>Open in ChatGPT</strong></a>
   &nbsp;·&nbsp; <a href="#quick-start"><strong>Connect Claude / Cursor / Codex</strong></a>
+  &nbsp;·&nbsp; <a href="https://github.com/getremcp/docsy"><strong>TypeScript SDK &amp; CLI</strong></a>
   &nbsp;·&nbsp; <a href="docs/ACCOUNT-FREE-REVIEW.md"><strong>Try without a Docsy account</strong></a>
 </p>
 
@@ -97,7 +101,7 @@ See [Client integrations](docs/CLIENT-INTEGRATIONS.md), [Getting started](docs/G
 
 **[Open the Docsy ChatGPT plugin](https://chatgpt.com/plugins/plugin_asdk_app_6ad6814ca7708191956117b3a3b58eb5).**
 
-This is the publisher-provided ChatGPT plugin link. Availability and sign-in depend on your ChatGPT account and client. A direct URL is not evidence of an independently verified public marketplace approval.
+This is the publisher-provided ChatGPT plugin link. Availability and sign-in depend on your ChatGPT account and client. This publisher link is not evidence of official ChatGPT marketplace approval. The SDK and CLI are available separately at https://github.com/getremcp/docsy.
 
 ## Connect your AI client
 
