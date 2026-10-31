@@ -1,0 +1,25 @@
+# Local environment and credentials (never distribute)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+*.secrets
+*.token
+credentials*.json
+service-account*.json
+id_rsa
+id_ed25519
+.npmrc
+.pypirc
+
+# Generated and local-only files
+*.zip
+*.log
+node_modules/
+dist/
+.cache/
+__pycache__/
+.DS_Store

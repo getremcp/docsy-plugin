@@ -1,0 +1,49 @@
+name: Verify published plugin release
+on:
+  release:
+    types: [published]
+permissions:
+  contents: read
+jobs:
+  verify-assets:
+    name: Git tag equals downloadable ZIP, recording exists
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Reconstruct six-file package from release tag
+        shell: bash
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,os,pathlib,zipfile
+          tag=os.environ['TAG']
+          assert tag.startswith('plugin-v')
+          version=tag.removeprefix('plugin-v')
+          assert json.loads(pathlib.Path('plugin.json').read_text())['version']==version
+          names=['plugin.json','mcp.json','skills/find-docs/SKILL.md',
+                 'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+                 'assets/docsy-logo-dark-512.png']
+          target=pathlib.Path('/tmp/docsy-plugin-release-built.zip')
+          with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+            for name in sorted(names):
+              info=zipfile.ZipInfo(name,(2026,10,11,0,0,0))
+              info.compress_type=zipfile.ZIP_DEFLATED
+              info.external_attr=0o644<<16
+              z.writestr(info,pathlib.Path(name).read_bytes(),
+                         compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+          print('tag',tag,'sha256',hashlib.sha256(target.read_bytes()).hexdigest())
+          PY
+      - name: Compare immutable public ZIP and recording
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" --dir /tmp
+          version="${TAG#plugin-v}"
+          cmp /tmp/docsy-plugin-release-built.zip "/tmp/docsy-plugin-v${version}.zip"
+          test -s "/tmp/docsy-review-walkthrough-v${version}.mp4"
+          file "/tmp/docsy-review-walkthrough-v${version}.mp4" | grep -E 'ISO Media|MP4'

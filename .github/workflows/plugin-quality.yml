@@ -1,0 +1,89 @@
+name: Public plugin quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    name: Manifest and release packaging
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Enforce exact public release boundary and package
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib,json,pathlib,re,zipfile
+          root=pathlib.Path('.')
+          allowed={
+            '.agents/plugins/marketplace.json',
+            '.claude-plugin/marketplace.json','.claude-plugin/plugin.json',
+            '.cursor/mcp.json','.mcp.json','.gitignore',
+            'README.md','LICENSE','SECURITY.md','plugin.json','mcp.json','server.json',
+            '.github/workflows/plugin-quality.yml',
+            '.github/workflows/release-integrity.yml',
+            '.github/workflows/mcp-registry-publish.yml',
+            'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+            'assets/docsy-marketplace-400.png',
+            'assets/docsy-logo-dark-512.png','assets/docsy-wordmark-inverse.svg',
+            'assets/docsy-wordmark.svg','assets/github-social-preview-1280x640.png',
+            'docs/GETTING-STARTED.md','docs/CLIENT-INTEGRATIONS.md',
+            'docs/BRAND-ASSETS.md','docs/DISTRIBUTION-STATUS.md',
+            'docs/ACCOUNT-FREE-REVIEW.md',
+            'docs/README.zh-CN.md','docs/ANNOUNCEMENT.zh-CN.md',
+            'skills/find-docs/SKILL.md',
+          }
+          public_only_sha256={
+            'assets/docsy-marketplace-400.png':
+              '7b0a1992b7ea90cfb26e73bf4d7f1c8e17f08bb3cba7d80691510ffe14197141',
+            'docs/ANNOUNCEMENT.zh-CN.md':
+              '7e242c3977079d1d2a9308415de1ecc9bebc91f35b078308d1a33ee80c629995',
+            'docs/DISTRIBUTION-STATUS.md':
+              'af77d562c556a3a7d7234d543f1a6a12ffac233db6bdda54223dda7e03f7147a',
+            'docs/ACCOUNT-FREE-REVIEW.md':
+              '7bb1d6b81c87314372e88b2c899493d60a18fb3f19dc49a4e1243851becd4f28',
+            'docs/README.zh-CN.md':
+              '6e1c9d87d21e456140acc8e6ea0b086556867d206540cdd248ba8f728de18d32',
+          }
+          for filename,digest in public_only_sha256.items():
+            assert hashlib.sha256(pathlib.Path(filename).read_bytes()).hexdigest()==digest, filename
+          actual={p.as_posix() for p in root.rglob('*')
+                  if p.is_file() and '.git' not in p.parts}
+          assert actual==allowed, 'Unapproved public paths: '+str(sorted(actual^allowed))
+          plugin=json.loads(pathlib.Path('plugin.json').read_text())
+          mcp=json.loads(pathlib.Path('mcp.json').read_text())
+          server=json.loads(pathlib.Path('server.json').read_text())
+          assert plugin['name']=='docsy'
+          claude=json.loads(pathlib.Path('.claude-plugin/plugin.json').read_text())
+          assert claude['name']==plugin['name']
+          assert claude['version']==plugin['version'], 'Claude plugin version must match root plugin version'
+          hosted=json.loads(pathlib.Path('.mcp.json').read_text())
+          assert hosted['mcpServers']['docsy']['url']=='https://docsy.remcp.site/mcp/registry'
+          assert re.fullmatch(r'\d+\.\d+\.\d+',plugin['version'])
+          assert mcp['mcpServers']['docsy']['url']=='https://docsy.remcp.site/mcp'
+          assert server['name']=='io.github.getremcp/docsy'
+          assert server['remotes'][0]['url']=='https://docsy.remcp.site/mcp/registry'
+          for path in ('docs/GETTING-STARTED.md', 'docs/CLIENT-INTEGRATIONS.md'):
+            content=pathlib.Path(path).read_text(encoding='utf-8')
+            assert 'https://docsy.remcp.site/mcp/registry' in content, path
+            assert not re.search(r'https://docsy\.remcp\.site/mcp(?!/)', content), 'Obsolete MCP URL in '+path
+          assert not any(p.is_symlink() for p in root.rglob('*') if '.git' not in p.parts)
+          names=['plugin.json','mcp.json','skills/find-docs/SKILL.md',
+                 'assets/docsy-icon-192.png','assets/docsy-logo-512.png',
+                 'assets/docsy-logo-dark-512.png']
+          dest=pathlib.Path('/tmp/docsy-plugin-check.zip')
+          with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
+            for name in sorted(names):
+              info=zipfile.ZipInfo(name,(2026,10,11,0,0,0))
+              info.compress_type=zipfile.ZIP_DEFLATED
+              info.external_attr=0o644<<16
+              archive.writestr(info,pathlib.Path(name).read_bytes(),
+                               compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+          assert zipfile.ZipFile(dest).namelist()==sorted(names)
+          print('PASS strict allowlist',len(actual),'paths; version',plugin['version'])
+          print('Build checksum:',hashlib.sha256(dest.read_bytes()).hexdigest())
+          PY

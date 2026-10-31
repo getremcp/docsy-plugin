@@ -1,0 +1,12 @@
+{
+  "name": "docsy",
+  "version": "1.0.10",
+  "description": "Current, source-linked and version-aware library documentation through Docsy MCP.",
+  "author": {
+    "name": "Anton Baider",
+    "url": "https://docsy.remcp.site"
+  },
+  "homepage": "https://docsy.remcp.site",
+  "repository": "https://github.com/getremcp/docsy-plugin",
+  "license": "MIT"
+}

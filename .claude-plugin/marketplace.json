@@ -1,0 +1,14 @@
+{
+  "name": "docsy-community",
+  "description": "Public source-linked developer documentation from the Docsy MCP server.",
+  "owner": {
+    "name": "Docsy open-source contributors"
+  },
+  "plugins": [
+    {
+      "name": "docsy",
+      "source": "./",
+      "description": "Find version-aware source-linked library documentation through the read-only Docsy MCP."
+    }
+  ]
+}
