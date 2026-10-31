@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ad6814ca7708191956117b3a3b58eb5"><img alt="Open Docsy in ChatGPT" src="https://img.shields.io/badge/ChatGPT-Open%20Docsy-10a37f?style=for-the-badge&logo=openai&logoColor=white"></a>
+</p>
+
+<p align="center">
   <a href="https://docsy.remcp.site"><strong>Website</strong></a>
   &nbsp;·&nbsp; <a href="https://docsy.remcp.site/docs">Documentation</a>
   &nbsp;·&nbsp; <a href="#quick-start">Quick start</a>
