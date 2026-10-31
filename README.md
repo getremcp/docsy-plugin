@@ -173,7 +173,7 @@ Docsy is available through **official registry records, npm, GitHub, independent
 | [ToolSDK MCP Registry](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016) · [mcpHQ](https://github.com/mcpHQ/awesome-mcp-servers/pull/452) · [Collabnix](https://github.com/collabnix/awesome-mcp-lists/pull/279) | Directory PRs merged |
 | [VoltAgent](https://github.com/VoltAgent/official-mcp-servers/pull/55) · [PenguinMiaou](https://github.com/PenguinMiaou/awesome-claude-code-plugins/pull/12) · [Awesome AI Coding Tools](https://github.com/mahmoudsajjadi/awesome-ai-coding-tools/pull/10) | Directory PRs merged |
 
-**More listings and review status:** [Full publication & submission tracker](docs/DISTRIBUTION-STATUS.md) includes LobeHub, regional directories, pending PRs, rejected submissions and historical identities. Pending submissions are not presented as published. **Smithery's hosted proxy/API shut down on 31 October 2026;** use the direct MCP endpoint instead.
+**More listings and review status:** [Live site overview](https://docsy.remcp.site/distribution) · [Full publication & submission tracker](docs/DISTRIBUTION-STATUS.md) includes LobeHub, regional directories, pending PRs, rejected submissions and historical identities. Pending submissions are not presented as published. **Smithery's hosted proxy/API shut down on 31 October 2026;** use the direct MCP endpoint instead.
 
 ## Releases, scope and security
 

@@ -2,6 +2,20 @@
 
 > **Live verification snapshot — 31 October 2026.** The tables below retain historical submissions and earlier audit dates. Never infer current approval from an older “pending” row.
 
+
+## Verified snapshot — 31 October 2026
+
+The official [MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.getremcp%2Fdocsy/versions/latest) API reports **active** `io.github.getremcp/docsy` **1.0.9** pointing to the canonical OAuth endpoint `/mcp/registry`. The old [`io.github.antonbaider/docsy` 1.0.5](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.antonbaider%2Fdocsy/versions/1.0.5) record is **deprecated**, not another current release.
+
+**Fresh direct page checks** (HTTP 200 with Docsy-specific page content): [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy), [LobeHub v1.0.9](https://lobehub.com/mcp/getremcp-docsy-plugin), [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin), [MCPRepository](https://mcprepository.com/getremcp/docsy-plugin), [Ext Ops Panel](https://extops.dev/plugins/mcp/io.github.getremcp/docsy), [LibHunt](https://www.libhunt.com/r/getremcp/docsy), and [Walnut World](https://walnut.world/w/docsy-plugin) ([SDK/CLI listing](https://walnut.world/w/docsy)). npm registry confirms [SDK 0.1.2](https://www.npmjs.com/package/@remcp/docsy-sdk) and [CLI 0.1.4](https://www.npmjs.com/package/@remcp/docsy-cli). Last-month downloads for **30 September–29 October 2026**: **717 SDK + 846 CLI = 1,563 package downloads** (not unique users).
+
+**Access limitations:** [Cursor Directory](https://cursor.directory/plugins/docsy) returned an HTTP 429 security checkpoint; this does not establish removal. The [ChatGPT plugin URL](https://chatgpt.com/plugins/plugin_asdk_app_6ad6814ca7708191956117b3a3b58eb5) varied between generic ChatGPT HTML and HTTP 403 from anonymous clients; independent marketplace approval and in-client availability remain unverified. [mcpub](https://mcpub.dev/) homepage was reachable, but no unique Docsy listing was verified. Smithery's hosted proxy/API/CLI shut down on 31 October; do not use the retired proxy for installation.
+
+**GitHub PR audit:** 42 distinct upstream directory/editorial PRs inspected on 31 October (37 from the original 25 October queue plus 5 international submissions): **33 open, 6 merged, 2 closed without merge, 1 inaccessible (HTTP 404)**. The six merges are [ToolSDK #1016](https://github.com/toolsdk-ai/toolsdk-mcp-registry/pull/1016), [mcpHQ #452](https://github.com/mcpHQ/awesome-mcp-servers/pull/452), [Collabnix #279](https://github.com/collabnix/awesome-mcp-lists/pull/279), [VoltAgent #55](https://github.com/VoltAgent/official-mcp-servers/pull/55), [PenguinMiaou #12](https://github.com/PenguinMiaou/awesome-claude-code-plugins/pull/12), and [Awesome AI Coding Tools #10](https://github.com/mahmoudsajjadi/awesome-ai-coding-tools/pull/10). Closed: [ToolHive #1791](https://github.com/stacklok/toolhive-catalog/pull/1791) and [Awesome Codex #33](https://github.com/ichangyou/awesome-codex/pull/33). Unavailable: [ccplugins #821](https://github.com/ccplugins/awesome-claude-code-plugins/pull/821).
+
+This is a **dated verification snapshot**, not real-time marketplace availability. Merged community PRs are not official client-vendor approvals. See the [site publication status](https://docsy.remcp.site/distribution) and the older per-channel audit history below.
+
+
 - **ChatGPT:** [Open the publisher-provided Docsy plugin link](https://chatgpt.com/plugins/plugin_asdk_app_6ad6814ca7708191956117b3a3b58eb5). Anonymous automated access returned HTTP 403, so public marketplace visibility could not be independently established.
 - **Official MCP Registry:** [`io.github.getremcp/docsy` v1.0.9](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.getremcp%2Fdocsy/versions/latest) returned HTTP 200 and the canonical `/mcp/registry` remote.
 - **Live MCP:** anonymous `/mcp/public` `initialize`, `tools/list`, `resolve-library-id`, `query-docs` HTTP 200; protected `/mcp/registry` HTTP 401 without OAuth.
@@ -42,7 +56,7 @@ The canonical MCP endpoint returns **HTTP 401** without OAuth; /readyz returned 
 | Glama | [Docsy connector](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Listed; publisher-claimed, five tools |
 | Sagargupta Awesome MCP Servers | [Merged listing PR #212](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | PR merged 24 Oct 2026; included in the GitHub catalog |
 | Awesome Remote MCP Servers | [Docsy entry](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/README.md) | Public listing; confirmed from upstream GitHub README 24 Oct 2026 |
-| mcpub | [Directory](https://mcpub.dev/) | Registered 24 Oct 2026; unique permalink not confirmed |
+| mcpub | [Directory](https://mcpub.dev/) | Registration reported 24 Oct 2026; **public Docsy listing not independently verified** |
 | Launch MCP | [Public Docsy listing](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | HTTP 200 on 24 Oct 2026 |
 | MCPRepository | [Docsy public listing](https://mcprepository.com/getremcp/docsy-plugin) | Verified public 25 Oct 2026: HTTP 200, title `Docsy MCP Plugin - MCP Server`, source `getremcp/docsy-plugin` |
 | LibHunt | [Docsy SDK & CLI](https://www.libhunt.com/r/getremcp/docsy) | Public source listing |
