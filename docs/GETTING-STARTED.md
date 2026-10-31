@@ -19,14 +19,14 @@ Docsy finds version-aware developer documentation with source links. Use the hos
 | Terminal | [npm CLI](#npm-command-line-client) | Public REST lookup can be anonymous |
 | TypeScript | [npm SDK](#typescript-sdk) | Public REST lookup can be anonymous |
 
-**MCP endpoint: https://docsy.remcp.site/mcp**
+**MCP endpoint: https://docsy.remcp.site/mcp/registry**
 
 The hosted remote MCP service currently requires OAuth 2.1 account authorization. HTTP 401 with a WWW-Authenticate challenge is expected before the MCP client authorizes. Public REST documentation lookup is a different interface and can be anonymous, subject to rate limits. A client configuration alone does not grant access.
 
 ## Codex CLI
 
 ~~~sh
-codex mcp add docsy --url https://docsy.remcp.site/mcp
+codex mcp add docsy --url https://docsy.remcp.site/mcp/registry
 codex mcp login docsy
 codex mcp get docsy
 ~~~
@@ -36,7 +36,7 @@ Complete browser account authorization when prompted. Then ask Codex for officia
 ## Claude Code
 
 ~~~sh
-claude mcp add --transport http docsy https://docsy.remcp.site/mcp
+claude mcp add --transport http docsy https://docsy.remcp.site/mcp/registry
 ~~~
 
 Finish Docsy account sign-in using the MCP management flow in Claude Code.
@@ -49,7 +49,7 @@ Merge this server into Cursor MCP settings or the project MCP configuration file
 {
   "mcpServers": {
     "docsy": {
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -66,7 +66,7 @@ Open **MCP: Open User Configuration** and merge Docsy into the existing servers 
   "servers": {
     "docsy": {
       "type": "http",
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -80,7 +80,7 @@ Where your account and client support custom remote MCP servers, use these value
 
 ~~~text
 Name: Docsy
-URL: https://docsy.remcp.site/mcp
+URL: https://docsy.remcp.site/mcp/registry
 Authentication: OAuth 2.1
 ~~~
 
@@ -168,7 +168,7 @@ Never paste tokens, private code or personal data into public documentation prom
 
 ~~~sh
 # Before authorization, HTTP 401 is normal
-curl -I https://docsy.remcp.site/mcp
+curl -I https://docsy.remcp.site/mcp/registry
 
 # Public documentation website
 curl -I https://docsy.remcp.site/docs

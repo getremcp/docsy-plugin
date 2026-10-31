@@ -67,6 +67,10 @@ jobs:
           assert mcp['mcpServers']['docsy']['url']=='https://docsy.remcp.site/mcp'
           assert server['name']=='io.github.getremcp/docsy'
           assert server['remotes'][0]['url']=='https://docsy.remcp.site/mcp/registry'
+          for path in ('docs/GETTING-STARTED.md', 'docs/CLIENT-INTEGRATIONS.md'):
+            content=pathlib.Path(path).read_text(encoding='utf-8')
+            assert 'https://docsy.remcp.site/mcp/registry' in content, path
+            assert not re.search(r'https://docsy\.remcp\.site/mcp(?!/)', content), 'Obsolete MCP URL in '+path
           assert not any(p.is_symlink() for p in root.rglob('*') if '.git' not in p.parts)
           names=['plugin.json','mcp.json','skills/find-docs/SKILL.md',
                  'assets/docsy-icon-192.png','assets/docsy-logo-512.png',

@@ -1,6 +1,6 @@
 # Docsy MCP — native setup for 13 clients
 
-Canonical Streamable HTTP endpoint: `https://docsy.remcp.site/mcp`. Docsy requires OAuth 2.1 account sign-in. A saved configuration alone is not a verified connection.
+Canonical Streamable HTTP endpoint: `https://docsy.remcp.site/mcp/registry`. Docsy requires OAuth 2.1 account sign-in. A saved configuration alone is not a verified connection.
 
 The examples below register a remote, **read-only** documentation server. Merge JSON/TOML into existing settings rather than overwriting other MCP servers. Never include passwords, OAuth tokens or proprietary source code in a public configuration.
 
@@ -29,7 +29,7 @@ Register Docsy as a remote HTTP MCP server.
 **Where:** Terminal · user or project scope
 
 ```shell
-claude mcp add --transport http docsy https://docsy.remcp.site/mcp
+claude mcp add --transport http docsy https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** In Claude Code, run /mcp to sign in; then check claude mcp list.
@@ -43,7 +43,7 @@ Add a custom remote MCP connector to Claude on the web, Desktop or Cowork.
 **Where:** Customize → Connectors → Add custom connector
 
 ```shell
-https://docsy.remcp.site/mcp
+https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** Create the connector with this URL, authorize Docsy, then enable it for your conversation and check the tools.
@@ -59,7 +59,7 @@ Shared MCP configuration for Codex CLI and the IDE extension.
 **Where:** Terminal · ~/.codex/config.toml
 
 ```shell
-codex mcp add docsy --url https://docsy.remcp.site/mcp
+codex mcp add docsy --url https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** Complete the OAuth prompt, or run codex mcp login docsy; inspect codex mcp list.
@@ -76,7 +76,7 @@ Add an HTTP MCP server through Cursor Customize or mcp.json.
 {
   "mcpServers": {
     "docsy": {
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -93,7 +93,7 @@ Native Devin CLI remote MCP installation with browser OAuth.
 **Where:** Devin CLI · user or project scope
 
 ```shell
-devin mcp add docsy https://docsy.remcp.site/mcp
+devin mcp add docsy https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** Run devin mcp login docsy, then devin mcp list; check for an authenticated connection.
@@ -107,7 +107,7 @@ Register the remote MCP URL with OpenCode V2 (native MCP CLI).
 **Where:** Terminal · opencode mcp add / mcp list
 
 ```shell
-opencode mcp add docsy --url https://docsy.remcp.site/mcp
+opencode mcp add docsy --url https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** Run opencode mcp list; if auth is required, open /mcps and sign in with Docsy.
@@ -126,7 +126,7 @@ Use the new serverUrl field, not legacy url or httpUrl.
 {
   "mcpServers": {
     "docsy": {
-      "serverUrl": "https://docsy.remcp.site/mcp"
+      "serverUrl": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -146,7 +146,7 @@ Configure Docsy as a remote MCP server for Kiro.
 {
   "mcpServers": {
     "docsy": {
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -166,7 +166,7 @@ Add Docsy as a custom remote MCP server from Warp agent settings.
 {
   "mcpServers": {
     "docsy": {
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -185,7 +185,7 @@ Start Goose with Docsy as a remote Streamable HTTP extension.
 **Where:** Goose CLI · session extension
 
 ```shell
-goose session --with-streamable-http-extension "https://docsy.remcp.site/mcp"
+goose session --with-streamable-http-extension "https://docsy.remcp.site/mcp/registry"
 ```
 
 **Authorize and verify:** Complete browser authorization if prompted, and confirm the extension exposes Docsy documentation tools.
@@ -203,7 +203,7 @@ Use VS Code Copilot Chat MCP; cloud agent OAuth is a different capability.
   "servers": {
     "docsy": {
       "type": "http",
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
@@ -222,7 +222,7 @@ Register a remote MCP server in Grok Build CLI.
 **Where:** Terminal · ~/.grok/config.toml
 
 ```shell
-grok mcp add --transport http docsy https://docsy.remcp.site/mcp
+grok mcp add --transport http docsy https://docsy.remcp.site/mcp/registry
 ```
 
 **Authorize and verify:** Run grok mcp doctor docsy and authorize from /mcps if needed.
@@ -239,7 +239,7 @@ Use the standard Streamable HTTP transport for a custom MCP-capable agent.
 {
   "mcpServers": {
     "docsy": {
-      "url": "https://docsy.remcp.site/mcp"
+      "url": "https://docsy.remcp.site/mcp/registry"
     }
   }
 }
