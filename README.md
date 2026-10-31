@@ -160,9 +160,13 @@ Docsy is available through **official registry records, npm, GitHub, independent
 | Directory | Public record |
 | --- | --- |
 | [Glama](https://glama.ai/mcp/connectors/io.github.getremcp/docsy) | Public connector page, five tools |
+| [LobeHub MCP Marketplace](https://lobehub.com/mcp/getremcp-docsy-plugin) | Public Docsy v1.0.9 listing, linked to the canonical OAuth endpoint |
 | [Cursor Directory](https://cursor.directory/plugins/docsy) | Previously verified listing (live automated recheck was rate-limited on 31 October) |
 | [Launch MCP](https://launchmcp.co/mcp/servers/getremcp/docsy-plugin) | Public listing |
 | [MCPRepository](https://mcprepository.com/getremcp/docsy-plugin) | Public listing |
+| [Ext Ops Panel](https://extops.dev/plugins/mcp/io.github.getremcp/docsy) | Public indexed Docsy profile |
+| [LibHunt](https://www.libhunt.com/r/getremcp/docsy) | Public SDK & CLI project index |
+| [Walnut World](https://walnut.world/w/docsy-plugin) | Public GitHub-indexed Docsy package; publisher ownership unclaimed |
 | [AI Anytime Awesome MCP Servers](https://github.com/AIAnytime/Awesome-MCP-Servers/pull/313) | Directory PR merged |
 | [TensorBlock MCP Index](https://github.com/TensorBlock/awesome-mcp-servers/pull/4485) | Directory PR merged |
 | [Sagargupta Awesome MCP Servers](https://github.com/Sagargupta16/awesome-mcp-servers/pull/212) | Directory PR merged |
