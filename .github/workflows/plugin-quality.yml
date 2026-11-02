@@ -22,7 +22,7 @@ jobs:
           allowed={
             '.agents/plugins/marketplace.json',
             '.claude-plugin/marketplace.json','.claude-plugin/plugin.json',
-            '.cursor/mcp.json','.mcp.json','.gitignore',
+            '.cursor-plugin/plugin.json','.cursor/mcp.json','.mcp.json','.gitignore',
             'README.md','LICENSE','SECURITY.md','plugin.json','mcp.json','server.json',
             '.github/workflows/plugin-quality.yml',
             '.github/workflows/release-integrity.yml',
@@ -67,6 +67,13 @@ jobs:
           assert mcp['mcpServers']['docsy']['url']=='https://docsy.remcp.site/mcp'
           assert server['name']=='io.github.getremcp/docsy'
           assert server['remotes'][0]['url']=='https://docsy.remcp.site/mcp/registry'
+          cursor=json.loads(pathlib.Path('.cursor-plugin/plugin.json').read_text())
+          cursor_mcp=json.loads(pathlib.Path('.cursor/mcp.json').read_text())
+          assert cursor['name']==plugin['name']
+          assert cursor['version']==server['version'], 'Cursor must pin published stable version'
+          assert cursor['mcpServers']=='./.cursor/mcp.json'
+          assert cursor['skills']=='./skills/'
+          assert cursor_mcp['mcpServers']['docsy']['url']==server['remotes'][0]['url']
           for path in ('docs/GETTING-STARTED.md', 'docs/CLIENT-INTEGRATIONS.md'):
             content=pathlib.Path(path).read_text(encoding='utf-8')
             assert 'https://docsy.remcp.site/mcp/registry' in content, path

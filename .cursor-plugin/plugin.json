@@ -1,0 +1,22 @@
+{
+  "name": "docsy",
+  "displayName": "Docsy",
+  "version": "1.0.9",
+  "description": "Find current and version-specific documentation for libraries, frameworks and SDKs with verifiable source links.",
+  "author": {
+    "name": "Anton Baider"
+  },
+  "homepage": "https://docsy.remcp.site",
+  "repository": "https://github.com/getremcp/docsy-plugin",
+  "license": "MIT",
+  "logo": "assets/docsy-icon-192.png",
+  "keywords": [
+    "documentation",
+    "MCP",
+    "libraries",
+    "developer-tools",
+    "version-aware"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.cursor/mcp.json"
+}
